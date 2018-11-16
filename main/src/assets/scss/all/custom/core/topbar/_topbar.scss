@@ -1,0 +1,265 @@
+// Top bar scss
+
+.topbar {
+  position: relative;
+  z-index: 50;
+  @extend %topbar-shadow;
+  background: $topbar;
+  height: $topbar-height;
+  .navbar-collapse {
+    padding: 0px 10px 0 0;
+  }
+  .top-navbar {
+    min-height: $topbar-height;
+    padding: 0px;
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .navbar-header {
+      line-height: $topbar-navlink-height;
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: $topbar-navbrand-padding;
+        .dark-logo {
+          display: none;
+        }
+        .logo-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+    .navbar-nav > .nav-item > .nav-link {
+      padding: $topbar-navlink-padding;
+      font-size: $topbar-navlink-font-size;
+      line-height: $topbar-navlink-height;
+      height: $topbar-navlink-height;
+    }
+    .navbar-nav > .nav-item {
+      transition: 0.2s ease-in;
+      &:hover {
+        background: $transparent-dark-bg;
+      }
+    }
+  }
+  .user-dd,
+  .mailbox {
+    min-width: 280px;
+  }
+  .nav-toggler,
+  .topbartoggler {
+    color: $theme-light;
+    padding: 0 15px;
+  }
+}
+
+.search-box {
+  .app-search {
+    position: absolute;
+    margin: 0px;
+    display: block;
+    z-index: 110;
+    width: 100%;
+    top: -1px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0px;
+    input {
+      width: 100%;
+      min-height: 70px;
+      border-radius: 0px;
+      font-size: 17px;
+      transition: 0.5s ease-in;
+    }
+    .srh-btn {
+      position: absolute;
+      top: 23px;
+      cursor: pointer;
+      background: $white;
+      width: 15px;
+      height: 15px;
+      right: 20px;
+      font-size: 14px;
+    }
+    &.show-search {
+      display: block;
+    }
+  }
+}
+
+/*******************
+Megamenu
+******************/
+.topbar {
+  .mega-dropdown {
+    position: static;
+    .dropdown-menu {
+      padding: 30px;
+      @extend %square;
+      width: 100%;
+      max-height: 480px;
+      overflow: auto;
+    }
+  }
+}
+/*******************
+Designed dropdown
+******************/
+.topbar {
+  .dropdown-menu {
+    padding-top: 0px;
+    border: 0px;
+    font-size: 1rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    .with-arrow {
+      position: absolute;
+      height: 10px;
+      overflow: hidden;
+      width: 40px;
+      top: -10px;
+      > span {
+        @extend %rotate45;
+        background-color: $white;
+        width: 15px;
+        height: 15px;
+        top: 3px;
+        left: 15px;
+        position: absolute;
+        content: '';
+        -moz-border-radius: 6px 0 0 0;
+        border-radius: 6px 0 0 0;
+        /*box-shadow:-3px -3px 8px rgba(0, 0, 0, 0.1);    */
+      }
+    }
+    &.dropdown-menu-right {
+      .with-arrow {
+        right: 0px;
+        > span {
+          right: 20px;
+          left: auto;
+        }
+      }
+    }
+  }
+}
+/*******************
+Topbar Responsive
+******************/
+
+@media (max-width: 767px) {
+  .topbar .top-navbar {
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+      display: block;
+      width: 100%;
+      border-top: 1px solid $border-color;
+    }
+    .navbar-nav {
+      flex-direction: row;
+      .dropdown {
+        position: static;
+      }
+    }
+    .navbar-nav > .nav-item > .nav-link {
+      padding: 0 10px;
+    }
+    .navbar-header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .dropdown-menu {
+      position: absolute;
+      width: 100%;
+      .with-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+/*******************
+Popup Dots
+******************/
+.notify {
+  position: relative;
+  top: -36px;
+  right: -7px;
+  .heartbit {
+    position: absolute;
+    top: -20px;
+    right: -4px;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    border: 5px solid $danger;
+    border-radius: 70px;
+    -moz-animation: heartbit 1s ease-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: heartbit 1s ease-out;
+    -o-animation-iteration-count: infinite;
+    -webkit-animation: heartbit 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .point {
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: $danger;
+    position: absolute;
+    right: 6px;
+    top: -10px;
+  }
+}
+
+@-moz-keyframes heartbit {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    -moz-transform: scale(0.1);
+    opacity: 0.1;
+  }
+  50% {
+    -moz-transform: scale(0.5);
+    opacity: 0.3;
+  }
+  75% {
+    -moz-transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes heartbit {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.1;
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.3;
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
