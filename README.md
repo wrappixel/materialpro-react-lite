@@ -1,9 +1,37 @@
-<h2>Material Pro react lite admin template</h2>
-Its a Free React admin template to use for your personal project, if you want to use this in your client or commercial project then buy our pro version of Material pro react, with this pro version you will get tons of Features.
+# materialpro-react-lite
 
-<h2><a href="https://wrappixel.com/demos/free-admin-templates/materialpro-reactadmin-lite/landingpage/index.html"> Live Demo of Lite version </a></h2>
+<h4><a href="https://wrappixel.com/demos/free-admin-templates/materialpro-reactadmin-lite/main/#/starter/starter">Free Version Demo Link</a></h4>
 
-<h2><a href="https://wrappixel.com/demos/react-admin-templates/materialpro-react-admin/landingpage/index.html"> Live Demo of Pro version </a></h2>
+## Pro Version
 
+<a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/"><img src="https://www.wrappixel.com/wp-content/uploads/edd/2019/07/materialpro-react-nws.jpg"/></a><br/>
 
-<h2><a href="https://wrappixel.com/templates/materialpro-react-admin/"> Buy Pro Version </a></h2>
+<h4><a href="https://www.wrappixel.com/demos/react-admin-templates/materialpro-react-admin/main/dashboards/dashboard1">Demo</a></h4>
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run start
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run eject
+```
+
+### Customize configuration
+See [Configuration Reference](https://reactjs.org).
