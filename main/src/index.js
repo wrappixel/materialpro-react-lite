@@ -11,12 +11,12 @@ import './assets/scss/style.css';
 //const hist = createBrowserHistory();
 
 ReactDOM.render(
- 
-  <HashRouter>
-    <Switch>
-      {indexRoutes.map((prop, key) => {
-        return <Route path={prop.path} key={key} component={prop.component} />;
-      })}
-    </Switch>
-  </HashRouter>
-  ,document.getElementById('root')); 
+
+    <HashRouter>
+        <Switch>
+            {indexRoutes.map((prop, key) => {
+                return <Route path={prop.path} key={key} component={prop.component} />;
+            })}
+        </Switch>
+    </HashRouter>
+    , document.getElementById('root')); 
