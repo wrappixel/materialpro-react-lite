@@ -14,7 +14,10 @@
 
 <!-- Description of Template -->
 <p>
-  Material pro React lite template is free to use in your personal project, for commercial use please buy pro version. with pro version you will get tons of features.
+  For all those who are not able to find the best<a href="https://www.wrappixel.com/templates/category/react-templates/"> free react template admin</a>, MaterialPro React Admin Lite can be on top of your list even when you are low on your budget. This template is based on React Redux framework, SaSSBase CSS, modular as well as the modern design approach that provides customization options and fully responsiveness.
+</p>
+<p>
+  The carefully crafted template is complete in itself relating to features, components, elements, widgets, and other essential tools. With this react redux UI dashboard you get lots of handy features for your personal as well as commercial projects. Possibly, you may require a comprehensive bundle of features for your commercial projects that you might not get in its free version, WrapPixel has carefully design pro version of this template with all of the features.
 </p>
 
 
