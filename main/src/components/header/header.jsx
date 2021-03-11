@@ -103,7 +103,7 @@ const Header = () => {
                     <Nav className="ml-auto float-right" navbar>
                         <NavItem>
                             <a
-                                href="https://wrappixel.com/templates/materialpro-react-admin/"
+                                href="https://www.wrappixel.com/templates/materialpro-react-admin/"
                                 className="btn btn-danger mr-2"
                                 style={{ marginTop: '20px' }}
                             >
