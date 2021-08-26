@@ -62,7 +62,7 @@
 <h2>Resources</h2>
 <ul>
 <li>  
-  Live Demo: <a href="https://wrappixel.com/demos/free-admin-templates/materialpro-reactadmin-lite/main/" rel="nofollow">https://wrappixel.com/demos/free-admin-templates/materialpro-reactadmin-lite/main/</a>
+  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/react/materialpro-react-free/main/#/starter/starter" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/react/materialpro-react-free/main/#/starter/starter</a>
 </li>
 <li>
     Download Page: <a href="https://www.wrappixel.com/templates/materialpro-react-admin-lite/" rel="nofollow">
@@ -92,7 +92,7 @@
 </a>
 <p>
    Checkout our premium version of Material Pro React Admin for lots more features and ready to use page templates.<br>
-   <a href="https://www.wrappixel.com/demos/react-admin-templates/materialpro-react-admin/main/authentication/login">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/">Download</a>
+   <a href="https://demos.wrappixel.com/premium-admin-templates/react/materialpro-react/main/authentication/login">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/">Download</a>
 </p>
 
 <!-- Useful Links of Template -->
