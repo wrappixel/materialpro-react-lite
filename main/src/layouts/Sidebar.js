@@ -1,6 +1,7 @@
 import { Button, Nav, NavItem } from "reactstrap";
 import { Link, useLocation } from "react-router-dom";
 import user1 from "../assets/images/users/user4.jpg";
+import probg from "../assets/images/bg/download.jpg";
 
 const navigation = [
   {
@@ -64,7 +65,10 @@ const Sidebar = () => {
   return (
     <div>
       <div className="d-flex align-items-center"></div>
-      <div className="profilebg">
+      <div
+        className="profilebg"
+        style={{ background: `url(${probg}) no-repeat` }}
+      >
         <div className="p-3 d-flex">
           <img src={user1} alt="user" width="50" className="rounded-circle" />
           <Button

@@ -11,9 +11,6 @@
     border-radius: $border-radius;
     color: white;
   }
-  .profilebg {
-    background: url("../../images/bg/download.jpg") no-repeat;
-  }
 }
 
 @include media-breakpoint-down(lg) {
