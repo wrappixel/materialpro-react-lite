@@ -8,6 +8,7 @@ const SalesChart = () => {
         show: false,
       },
       stacked: false,
+      fontFamily: "inherit"
     },
     dataLabels: {
       enabled: false,
