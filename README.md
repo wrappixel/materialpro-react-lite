@@ -99,7 +99,7 @@
 <h2>Useful Links</h2>
 <ul>
 <li><a href="https://www.wrappixel.com/templates/category/admin-template/">Admin Dashboard</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/">Free Bootstrap 4 Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/">Free Bootstrap Templates</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Dashboard Template</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/react-templates/">Reactjs Templates</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuetify Templates</a> from WrapPixel</li>
