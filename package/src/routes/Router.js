@@ -1,5 +1,6 @@
 import { lazy } from "react";
-import { Navigate } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router";
+
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
@@ -39,4 +40,6 @@ const ThemeRoutes = [
   },
 ];
 
-export default ThemeRoutes;
+const router = createBrowserRouter(ThemeRoutes)
+
+export default router;

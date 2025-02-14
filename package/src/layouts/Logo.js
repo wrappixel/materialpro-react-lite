@@ -1,5 +1,5 @@
 import  { ReactComponent as LogoDark1 } from "../assets/images/logos/materialpro.svg";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const Logo = () => {
   return (
