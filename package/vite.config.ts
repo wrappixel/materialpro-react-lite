@@ -42,4 +42,5 @@ export default defineConfig({
     // })],
 
     plugins: [svgr(), react()],
+    base: '/materialpro-react-lite/',
 });
