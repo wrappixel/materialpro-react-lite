@@ -52,7 +52,7 @@ const FullLayout: FC = () => {
                 ml: `256px`,
               },
             }),
-        
+            marginTop:"64px"
           }}
         >
           {/* PageContent */}

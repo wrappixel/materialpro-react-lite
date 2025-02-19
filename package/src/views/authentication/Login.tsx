@@ -12,7 +12,7 @@ import AuthLogo from 'src/layouts/full/shared/logo/AuthLogo';
 const Login2 = () => {
   
   return (
-    <PageContainer title="Login" description="this is Login page">
+    <PageContainer title="Login" description="this is Login page" isFullLayout={false}>
       <Box
         sx={{
           position: 'relative',

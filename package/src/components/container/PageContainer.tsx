@@ -9,10 +9,11 @@ type Props = {
   description?: string;
   children: any | any[];
   title?: string;
+  isFullLayout?:boolean;
 };
 
-const PageContainer = ({ title, description, children }: Props) => (
-  <Box sx={{marginTop:"64px"}}>
+const PageContainer = ({ title, description, children , isFullLayout=true }: Props) => (
+  <Box sx={{marginTop:isFullLayout ? "30px" :"0px"}} >
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />

@@ -6,7 +6,7 @@ import AuthRegister from './auth/AuthRegister';
 import AuthLogo from 'src/layouts/full/shared/logo/AuthLogo';
 
 const Register2 = () => (
-  <PageContainer title="Register" description="this is Register page">
+  <PageContainer title="Register" description="this is Register page" isFullLayout={false}>
     <Box
       sx={{
         position: 'relative',
