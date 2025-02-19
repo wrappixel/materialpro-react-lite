@@ -7,6 +7,7 @@ const DarkThemeColors = [
         light: '#253662',
         dark: '#1B84FF',
         contrastText: '#ffffff',
+        transparent: "#ffffff00"
       },
       secondary: {
         main: '#43CED7',

@@ -1137,6 +1137,22 @@ const Menuitems: MenuitemsType[] = [
   },
   {
     navlabel: true,
+    subheader: 'Auths',
+  },
+  {
+    id: uniqueId(),
+    title: 'Login',
+    icon: "solar:login-2-broken",
+    href: '/auth/login',
+  },
+  {
+    id: uniqueId(),
+    title: 'Register',
+    icon: "solar:shield-user-linear",
+    href: '/auth/register',
+  },
+  {
+    navlabel: true,
     subheader: 'Utilities',
   },
   {

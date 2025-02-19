@@ -5,6 +5,7 @@ const baselightTheme = {
       main: '#1B84FF',
       light: '#EDF5FD',
       dark: '#1B84FF',
+      transparent: "#ffffff00"
     },
     secondary: {
       main: '#43CED7',
@@ -46,7 +47,7 @@ const baselightTheme = {
       300: '#dee2e6',
       400: '#ced4da',
       500: '#768B9E',
-      600: '#6c757d',
+      600: '#2a3547',
     },
     text: {
       primary: '#3A4752',

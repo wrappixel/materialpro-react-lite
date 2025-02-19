@@ -43,7 +43,7 @@ const Sidebar = () => {
                 width: toggleWidth,
                 boxSizing: "border-box",
                 border: "0",
-                top: '64px',
+                top: '127px',
                 boxShadow: "1px 0 20px #00000014",
               },
             }}
@@ -59,7 +59,7 @@ const Sidebar = () => {
             >
               <Profile />
                
-              <Scrollbar sx={{ height: "calc(100% - 220px)" }}>
+              <Scrollbar sx={{ height: "calc(100% - 300px)" }}>
 
                 {/* ------------------------------------------- */}
                 {/* Sidebar Items */}

@@ -17,9 +17,20 @@ const Header = () => {
     boxShadow: 'none !important',
     background: theme.palette.primary.main,
     justifyContent: 'center',
+    position:"fixed",
+    top:"163px",
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.up('lg')]: {
       minHeight: '64px',
+      top: "64px"
+    },
+    [theme.breakpoints.up('md')]: {
+      minHeight: '64px',
+      top: "129px"
+    },
+    [theme.breakpoints.up('sm')]: {
+      minHeight: '64px',
+      top: "64px"
     },
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
@@ -46,7 +57,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBarStyled position="sticky" color="default">
+      <AppBarStyled color="default" >
         <ToolbarStyled>
           {/* ------------------------------------------- */}
           {/* Logo */}

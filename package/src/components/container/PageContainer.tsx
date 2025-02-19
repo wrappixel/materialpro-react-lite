@@ -1,6 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import React from 'react';
+import { Box } from '@mui/material';
+
 
 import { Helmet } from 'react-helmet';
 
@@ -11,13 +12,13 @@ type Props = {
 };
 
 const PageContainer = ({ title, description, children }: Props) => (
-  <div>
+  <Box sx={{marginTop:"64px"}}>
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
     </Helmet>
     {children}
-  </div>
+  </Box>
 );
 
 export default PageContainer;

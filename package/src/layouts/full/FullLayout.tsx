@@ -6,6 +6,7 @@ import Sidebar from './vertical/sidebar/Sidebar';
 import ScrollToTop from '../../components/shared/ScrollToTop';
 import LoadingBar from 'src/LoadingBar';
 import Header from './vertical/header/Header';
+import Topbar from './vertical/header/Topbar';
 
 const MainWrapper = styled('div')(() => ({}));
 
@@ -23,11 +24,17 @@ const FullLayout: FC = () => {
 
   return (
     <>
+
       <LoadingBar />
+                {/* ------------------------------------------- */}
+      {/* Topbar */}
+      {/* ------------------------------------------- */}
+      {/* <Topbar/> */}
       <MainWrapper>
         {/* ------------------------------------------- */}
         {/* Header */}
         {/* ------------------------------------------- */}
+        <Topbar/>
         { <Header />}
         {/* ------------------------------------------- */}
         {/* Sidebar */}
@@ -45,6 +52,7 @@ const FullLayout: FC = () => {
                 ml: `256px`,
               },
             }),
+        
           }}
         >
           {/* PageContent */}

@@ -88,7 +88,7 @@ export default function NavItem({
 
   return (
     <List component="li" disablePadding key={item?.id && item.title}>
-      <Link to={item.href}>
+      <Link to={item.href} target={`${item.chip ? "blank" :"_self"}`}>
         <ListItemStyled
           disabled={item?.disabled}
           selected={pathDirect === item?.href}

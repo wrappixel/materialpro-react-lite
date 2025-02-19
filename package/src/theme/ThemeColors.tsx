@@ -6,6 +6,7 @@ const ThemeColors = [
         main: '#1B84FF',
         light: '#e3f1fc',
         dark: '#006DAF',
+        transparent: "#ffffff00"
       },
       secondary: {
         main: '#0cbac5',
