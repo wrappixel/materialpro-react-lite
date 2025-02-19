@@ -50,7 +50,7 @@ const contacts = [
   },
   {
     img: user8,
-    title: "James Smith",
+    title: "James Smiths",
     subtext: "you were in video call",
     status: "primary.main",
   },
