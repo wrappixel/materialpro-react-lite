@@ -18,19 +18,19 @@ const Header = () => {
     background: theme.palette.primary.main,
     justifyContent: 'center',
     position:"fixed",
-    top:"163px",
+    top:"64px",
     backdropFilter: 'blur(4px)',
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.down('lg')]: {
       minHeight: '64px',
-      top: "64px"
+      top: "90px"
     },
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.down('md')]: {
       minHeight: '64px',
-      top: "129px"
+      top: "99px"
     },
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.down('sm')]: {
       minHeight: '64px',
-      top: "64px"
+      top: "134px"
     },
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
@@ -90,11 +90,7 @@ const Header = () => {
           {/* Toggle Button Sidebar */}
           {/* ------------------------------------------- */}
 
-          {lgUp ? (
-            <>
                 <Notifications/>
-            </>
-          ) : null}
 
 
           <Box flexGrow={1} />
@@ -102,26 +98,23 @@ const Header = () => {
           {lgUp ? (
             <>
               <Stack spacing={2} direction="row" alignItems="center">
-                <Button variant="contained"  color="success"  target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-admin/">
+                <Button variant="contained"  color="success"  target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376">
                    Check Pro Template
                </Button>
                 <Profile />
               </Stack>
             </>
           ) : (
-            <Box
-              display="flex"
-              justifyContent="center"
-              sx={{
-                width: toggleWidth,
-              }}
-            >
-              <Logo />
-            </Box>
+            null
           )}
           {lgUp ? null : (
             <>
-              <Box flexGrow={1} />
+                        <Stack spacing={2} direction="row" alignItems="center">
+                <Button variant="contained"  color="success"  target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376">
+                   Check Pro Template
+               </Button>
+                <Profile />
+              </Stack>
             </>
           )}
         </ToolbarStyled>

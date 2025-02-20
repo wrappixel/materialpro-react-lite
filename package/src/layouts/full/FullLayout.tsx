@@ -4,7 +4,6 @@ import { Outlet } from 'react-router';
 // import Header from './vertical/header/Header';
 import Sidebar from './vertical/sidebar/Sidebar';
 import ScrollToTop from '../../components/shared/ScrollToTop';
-import LoadingBar from 'src/LoadingBar';
 import Header from './vertical/header/Header';
 import Topbar from './vertical/header/Topbar';
 
@@ -25,7 +24,6 @@ const FullLayout: FC = () => {
   return (
     <>
 
-      <LoadingBar />
                 {/* ------------------------------------------- */}
       {/* Topbar */}
       {/* ------------------------------------------- */}

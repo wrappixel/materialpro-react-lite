@@ -29,7 +29,6 @@ const Router = [
     path: '/',
     element: <FullLayout />,
     children: [
-      { path: '/materialpro-react-lite',element: <Navigate to="/" /> },
       { path: '/',exact: true ,element: <Dashboard/> },
       { path: '/ui/typography', exact: true, element: <TypographyPage /> },
       { path: '/ui/shadow', exact: true, element: <Shadow /> },

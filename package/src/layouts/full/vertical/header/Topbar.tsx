@@ -52,9 +52,9 @@ const Topbar = () => {
               >
                  <img src={wrappixelLogo} alt="logo" />
                <Stack spacing={1} direction="row" sx={{flexWrap:'wrap' , display : {xs:"none",lg:"flex"} }} >
-                <Box sx={{display:"flex" , alignItems:"center"}} ><Link to="https://adminmart.com/support/" style={{display:"flex" , height:"fit-content"}} target='_blank' ><GhostButton startIcon={<IconLifebuoy size={18} />} variant="contained">Support</GhostButton></Link></Box>
-                <Box sx={{display:"flex" , alignItems:"center"}} ><Link to="https://adminmart.com/" style={{display:"flex" , height:"fit-content"}} target='_blank' ><GhostButton startIcon={<IconGift size={18} />} variant="contained">Templates</GhostButton></Link></Box>
-                <Box sx={{display:"flex" , alignItems:"center"}} ><Link to="https://adminmart.com/hire-us/" style={{display:"flex" , height:"fit-content"}} target='_blank' ><GhostButton startIcon={<IconBriefcase size={18} />} variant="contained">Hire us</GhostButton></Link></Box>
+                <Box sx={{display:"flex" , alignItems:"center"}} ><Link to="https://support.wrappixel.com/" style={{display:"flex" , height:"fit-content"}} target='_blank' ><GhostButton startIcon={<IconLifebuoy size={18} />} variant="contained">Support</GhostButton></Link></Box>
+                <Box sx={{display:"flex" , alignItems:"center"}} ><Link to="https://www.wrappixel.com/" style={{display:"flex" , height:"fit-content"}} target='_blank' ><GhostButton startIcon={<IconGift size={18} />} variant="contained">Templates</GhostButton></Link></Box>
+                <Box sx={{display:"flex" , alignItems:"center"}} ><Link to="https://www.wrappixel.com/hire-us/" style={{display:"flex" , height:"fit-content"}} target='_blank' ><GhostButton startIcon={<IconBriefcase size={18} />} variant="contained">Hire us</GhostButton></Link></Box>
                </Stack>
                 
               </Stack>

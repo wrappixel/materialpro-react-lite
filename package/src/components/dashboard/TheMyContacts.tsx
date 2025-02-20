@@ -17,9 +17,7 @@ import {
 import { Icon } from "@iconify/react";
 import user9 from 'src/assets/images/profile/user-9.jpg';
 import user2 from 'src/assets/images/profile/user-2.jpg';
-import user6 from 'src/assets/images/profile/user-6.jpg';
 import user3 from 'src/assets/images/profile/user-4.jpg';
-import user8 from 'src/assets/images/profile/user-8.jpg';
 
 
 
@@ -41,18 +39,6 @@ const contacts = [
     title: "Maria Rodriguez",
     subtext: "you missed john call",
     status: "error.main",
-  },
-  {
-    img: user6,
-    title: "John Rodriguez",
-    subtext: "you missed john call",
-    status: "error.main",
-  },
-  {
-    img: user8,
-    title: "James Smiths",
-    subtext: "you were in video call",
-    status: "primary.main",
   },
 ];
 

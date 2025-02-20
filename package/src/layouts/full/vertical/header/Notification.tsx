@@ -4,7 +4,6 @@ import Menu, { MenuProps } from '@mui/material/Menu';
 import * as dropdownData from './data';
 import Scrollbar from 'src/components/custom-scroll/Scrollbar';
 import { styled } from '@mui/material/styles';
-import { Stack } from '@mui/system';
 import { Icon } from '@iconify/react';
 
 const Notifications = () => {
@@ -56,7 +55,7 @@ const Notifications = () => {
         onClose={handleClose2}
         sx={{
           '& .MuiMenu-paper': {
-            width: '360px',
+            width: '120px',
             maxHeight: 'none',
             background: 'transparent',
 
@@ -66,24 +65,8 @@ const Notifications = () => {
           },
         }}
       >
-        <Stack
-          direction="column"
-          py={1.5}
-          px={3}
-          justifyContent="start"
-          color="#fff"
-          alignItems="start"
-          bgcolor="primary.contrastText"
-        >
-          <Typography variant="h5" fontSize="20px" sx={{color:"primary.dark"}}>
-            Notifications
-          </Typography>
-        </Stack>
-        <Scrollbar sx={{ height: '350px' }}>
-          {dropdownData.notifications.map((notification, index) => {
-            // const Icon = notification.icon;
-            const bgvalue = notification.bgcolor;
-            const colorvalue = notification.color;
+        <Scrollbar sx={{ height: '120px' }}>
+          {dropdownData.notifications.slice(0,3).map((notification, index) => {
             return (
               <Box key={index}>
                 <MenuItem
@@ -94,21 +77,6 @@ const Notifications = () => {
                     borderBottom: (theme: any) => `1px solid ${theme.palette.divider}`,
                   }}
                 >
-                  <Stack direction="row" spacing={2}>
-                    <Box
-                      minWidth="40px"
-                      height="40px"
-                      display="flex"
-                      alignItems="center"
-                      justifyContent="center"
-                      bgcolor={`${bgvalue}`}
-                      color={`${colorvalue}`}
-                      borderRadius="50px"
-                    >
-                      <Icon icon={notification.icon} height={20} />
-                    </Box>
-                    <Box>
-                      <Box display="flex" justifyContent="space-between">
                         <Typography
                           variant="subtitle2"
                           color="textPrimary"
@@ -122,20 +90,6 @@ const Notifications = () => {
                         >
                           {notification.title}
                         </Typography>
-                      </Box>
-                      <Typography
-                        color="textSecondary"
-                        variant="subtitle2"
-                        fontSize="12px"
-                        lineHeight={1.25}
-                        sx={{
-                          width: '200px',
-                        }}
-                      >
-                        {notification.subtitle}
-                      </Typography>
-                    </Box>
-                  </Stack>
                 </MenuItem>
               </Box>
             );
