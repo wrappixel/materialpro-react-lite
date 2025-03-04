@@ -24,12 +24,12 @@ const AuthLogin = ({ title, subtitle, subtext }:{title?:string , subtitle:any , 
         <Stack>
             <Box>
                 <Typography variant="subtitle1"
-                    fontWeight={600} component="label" htmlFor='username' mb="5px">Username</Typography>
+                    fontWeight={500} component="label" htmlFor='username' mb="5px">Username</Typography>
                 <CustomTextField id="username" variant="outlined" fullWidth />
             </Box>
             <Box mt="25px">
                 <Typography variant="subtitle1"
-                    fontWeight={600} component="label" htmlFor='password' mb="5px" >Password</Typography>
+                    fontWeight={500} component="label" htmlFor='password' mb="5px" >Password</Typography>
                 <CustomTextField id="password" type="password" variant="outlined" fullWidth />
             </Box>
             <Stack justifyContent="space-between" direction="row" alignItems="center" my={2}>

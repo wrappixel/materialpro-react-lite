@@ -3,15 +3,10 @@ import { useTheme } from "@mui/material/styles";
 import { Stack, Typography, Avatar, Box } from "@mui/material";
 import DashboardCard from "../shared/DashboardCard";
 
-
 const Chart = React.lazy(() => import('react-apexcharts'));
 
 
-interface SktSalesOverviewtwoCardProps {
-  isLoading: boolean;
-}
-
-const SalesOverview = ({ isLoading }: SktSalesOverviewtwoCardProps) => {
+const SalesOverview = () => {
   // chart color
   const theme = useTheme();
   const primary = theme.palette.primary.main;
@@ -76,54 +71,52 @@ const SalesOverview = ({ isLoading }: SktSalesOverviewtwoCardProps) => {
 
   return (
     <>
-      {isLoading ? (
-         "Loading..."
-      ) : (
-        <DashboardCard
-          title="Sales Overview"
-          subtitle="Ample Admin Vs Pixel Admin"
-          action={
-            <Stack spacing={3} mt={5} direction="row">
-              <Stack direction="row" spacing={1} alignItems="center">
-                <Avatar
-                  sx={{
-                    width: 9,
-                    height: 9,
-                    bgcolor: primary,
-                    svg: { display: "none" },
-                  }}
-                ></Avatar>
-                <Typography variant="subtitle2" color="primary.main">
-                  Ample
-                </Typography>
-              </Stack>
-              <Stack direction="row" spacing={1} alignItems="center">
-                <Avatar
-                  sx={{
-                    width: 9,
-                    height: 9,
-                    bgcolor: secondary,
-                    svg: { display: "none" },
-                  }}
-                ></Avatar>
-                <Typography variant="subtitle2" color="secondary.main">
-                  Pixel
-                </Typography>
-              </Stack>
+
+      <DashboardCard
+        title="Sales Overview"
+        subtitle="Ample Admin Vs Pixel Admin"
+        action={
+          <Stack spacing={3} mt={5} direction="row">
+            <Stack direction="row" spacing={1} alignItems="center">
+              <Avatar
+                sx={{
+                  width: 9,
+                  height: 9,
+                  bgcolor: primary,
+                  svg: { display: "none" },
+                }}
+              ></Avatar>
+              <Typography variant="subtitle2" color="primary.main">
+                Ample
+              </Typography>
             </Stack>
-          }
-        >
-          <Box height="295px" >
-            <Chart
-              options={optionscolumnchart}
-              series={seriescolumnchart}
-              type="bar"
-              height={295}
-              width={"100%"}
-            />
-          </Box>
-        </DashboardCard>
-      )}
+            <Stack direction="row" spacing={1} alignItems="center">
+              <Avatar
+                sx={{
+                  width: 9,
+                  height: 9,
+                  bgcolor: secondary,
+                  svg: { display: "none" },
+                }}
+              ></Avatar>
+              <Typography variant="subtitle2" color="secondary.main">
+                Pixel
+              </Typography>
+            </Stack>
+          </Stack>
+        }
+      >
+        <Box height="295px" >
+          <Chart
+            options={optionscolumnchart}
+            series={seriescolumnchart}
+            type="bar"
+            height={295}
+            width={"100%"}
+          />
+        </Box>
+      </DashboardCard>
+
     </>
   );
 };

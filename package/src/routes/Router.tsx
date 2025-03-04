@@ -20,10 +20,6 @@ const TypographyPage = Loadable(lazy(() => import('../views/utilities/Typography
 const Shadow = Loadable(lazy(() => import('../views/utilities/Shadow')))
 const Icons = Loadable(lazy(() => import('../views/icons/Icons')))
 
-
-// const Login = Loadable(lazy(() => import('../views/authentication/auth1/Login')));
-// const Register = Loadable(lazy(() => import('../views/authentication/auth1/Register')));
-
 const Router = [
   {
     path: '/',
@@ -48,7 +44,7 @@ const Router = [
 
     ],
   },
-  { basename: '/materialpro-react-lite' }
+  { basename: '/' }
 ];
 
 const router = createBrowserRouter(Router);

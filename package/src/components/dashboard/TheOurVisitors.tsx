@@ -3,15 +3,9 @@ import { useTheme } from "@mui/material/styles";
 import { Stack, Typography, Avatar, Box, Divider } from "@mui/material";
 import DashboardCard from '../shared/DashboardCard';
 
-
-
 const Chart = React.lazy(() => import('react-apexcharts'));
 
-interface OurVisitortwoCardProps {
-  isLoading: boolean;
-}
-
-const OurVisitors = ({ isLoading }: OurVisitortwoCardProps) => {
+const OurVisitors = () => {
   // chart color
   const theme = useTheme();
   const primary = theme.palette.primary.main;
@@ -64,84 +58,82 @@ const OurVisitors = ({ isLoading }: OurVisitortwoCardProps) => {
 
   return (
     <>
-      {isLoading ? (
-        "Loading..."
-      ) : (
-        <DashboardCard
-          title="Our Visitors"
-          subtitle="Different Devices Used to Visit"
-          footer={
-            <>
-              <Divider />
-              {/* points */}
-              <Stack spacing={3} p={3} direction="row" justifyContent="center">
-                <Stack direction="row" spacing={1} alignItems="center">
-                  <Avatar
-                    sx={{
-                      width: 9,
-                      height: 9,
-                      bgcolor: primary,
-                      svg: { display: "none" },
-                    }}
-                  ></Avatar>
-                  <Typography
-                    variant="subtitle2"
-                    color="primary.main"
-                  >
-                    Mobile
-                  </Typography>
-                </Stack>
 
-                <Stack direction="row" spacing={1} alignItems="center">
-                  <Avatar
-                    sx={{
-                      width: 9,
-                      height: 9,
-                      bgcolor: info,
-                      svg: { display: "none" },
-                    }}
-                  ></Avatar>
-                  <Typography
-                    variant="subtitle2"
-                    color="info.main"
-                  >
-                    Desktop
-                  </Typography>
-                </Stack>
-
-                <Stack direction="row" spacing={1} alignItems="center">
-                  <Avatar
-                    sx={{
-                      width: 9,
-                      height: 9,
-                      bgcolor: secondary,
-                      svg: { display: "none" },
-                    }}
-                  ></Avatar>
-                  <Typography
-                    variant="subtitle2"
-                    color="secondary.main"
-                  >
-                    Tablet
-                  </Typography>
-                </Stack>
-              </Stack>
-            </>
-          }
-        >
+      <DashboardCard
+        title="Our Visitors"
+        subtitle="Different Devices Used to Visit"
+        footer={
           <>
-            <Box height="220px">
-              <Chart
-                options={optionscolumnchart}
-                series={seriescolumnchart}
-                type="donut"
-                height={250}
-                width={"100%"}
-              />
-            </Box>
+            <Divider />
+            {/* points */}
+            <Stack spacing={3} p={3} direction="row" justifyContent="center">
+              <Stack direction="row" spacing={1} alignItems="center">
+                <Avatar
+                  sx={{
+                    width: 9,
+                    height: 9,
+                    bgcolor: primary,
+                    svg: { display: "none" },
+                  }}
+                ></Avatar>
+                <Typography
+                  variant="subtitle2"
+                  color="primary.main"
+                >
+                  Mobile
+                </Typography>
+              </Stack>
+
+              <Stack direction="row" spacing={1} alignItems="center">
+                <Avatar
+                  sx={{
+                    width: 9,
+                    height: 9,
+                    bgcolor: info,
+                    svg: { display: "none" },
+                  }}
+                ></Avatar>
+                <Typography
+                  variant="subtitle2"
+                  color="info.main"
+                >
+                  Desktop
+                </Typography>
+              </Stack>
+
+              <Stack direction="row" spacing={1} alignItems="center">
+                <Avatar
+                  sx={{
+                    width: 9,
+                    height: 9,
+                    bgcolor: secondary,
+                    svg: { display: "none" },
+                  }}
+                ></Avatar>
+                <Typography
+                  variant="subtitle2"
+                  color="secondary.main"
+                >
+                  Tablet
+                </Typography>
+              </Stack>
+            </Stack>
           </>
-        </DashboardCard>
-      )}
+        }
+      >
+        <>
+          <Box height="220px">
+            <Chart
+              options={optionscolumnchart}
+              series={seriescolumnchart}
+              type="donut"
+              height={250}
+              width={"100%"}
+            />
+          </Box>
+        </>
+      </DashboardCard>
+
     </>
   );
 };

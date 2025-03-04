@@ -1,10 +1,6 @@
 "use client";
-
-import { useEffect, useState } from "react";
-
 import { Grid2 as Grid, Box } from "@mui/material";
 import PageContainer from "src/components/container/PageContainer";
-import Welcome from 'src/layouts/full/shared/welcome/Welcome';
 import SalesOverview from "src/components/dashboard/TheSalesOverview";
 import OurVisitors from "src/components/dashboard/TheOurVisitors";
 import ProfileCard from "src/components/dashboard/TheProfileCard";
@@ -13,10 +9,6 @@ import MyContacts from "src/components/dashboard/TheMyContacts";
 
 
 export default function Dashboard() {
-    const [isLoading, setLoading] = useState(true);
-    useEffect(() => {
-        setLoading(false);
-    }, []);
 
     return (
         <PageContainer title="General" description="this is Dashboard">
@@ -28,14 +20,14 @@ export default function Dashboard() {
                             xs: 12,
                             lg: 8
                         }}>
-                        <SalesOverview isLoading={isLoading} />
+                        <SalesOverview />
                     </Grid>
                     <Grid
                         size={{
                             xs: 12,
                             lg: 4
                         }}>
-                        <OurVisitors isLoading={isLoading} />
+                        <OurVisitors />
                     </Grid>
 
                     <Grid
@@ -60,7 +52,6 @@ export default function Dashboard() {
                         <ActivityTimeline />
                     </Grid>
                 </Grid>
-                <Welcome />
             </Box>
         </PageContainer>
     );

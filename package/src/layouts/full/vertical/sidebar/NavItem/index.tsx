@@ -120,13 +120,14 @@ export default function NavItem({
 
           {!item.chip || hideMenu ? null : (
           <Chip
-            color={"primary"}
             variant={'filled'}
             size="small"
             label={"Pro"}
             sx={{
               height: 'fit-content', 
-             
+              backgroundColor: 'primary.light',
+              color: 'primary.main',
+              fontWeight: 500,
               borderRadius:"999px",
               '& .MuiChip-label': {
                 fontSize:"10px",
