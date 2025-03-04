@@ -4,21 +4,20 @@
 // @ts-ignore
 import React, { lazy } from 'react';
 import { Navigate, createBrowserRouter } from 'react-router';
-import Loadable from '../layouts/full/shared/loadable/Loadable';
 
 /* ***Layouts**** */
-const FullLayout = Loadable(lazy(() => import('../layouts/full/FullLayout')));
-const BlankLayout = Loadable(lazy(() => import('../layouts/blank/BlankLayout')));
+const FullLayout = lazy(() => import('../layouts/full/FullLayout'));
+const BlankLayout = lazy(() => import('../layouts/blank/BlankLayout'));
 
 /* ****Pages***** */
-const Dashboard = Loadable(lazy(() => import("../views/dashboard/page")));
-const SamplePage = Loadable(lazy(() => import('../views/sample-page/SamplePage')));
-const Error = Loadable(lazy(() => import('../views/authentication/NotFound')));
-const Register = Loadable(lazy(() => import('../views/authentication/Register')));
-const Login = Loadable(lazy(() => import('../views/authentication/Login')));
-const TypographyPage = Loadable(lazy(() => import('../views/utilities/TypographyPage')))
-const Shadow = Loadable(lazy(() => import('../views/utilities/Shadow')))
-const Icons = Loadable(lazy(() => import('../views/icons/Icons')))
+const Dashboard = lazy(() => import("../views/dashboard/page"));
+const SamplePage = lazy(() => import('../views/sample-page/SamplePage'));
+const Error = lazy(() => import('../views/authentication/NotFound'));
+const Register = lazy(() => import('../views/authentication/Register'));
+const Login = lazy(() => import('../views/authentication/Login'));
+const TypographyPage = lazy(() => import('../views/utilities/TypographyPage'))
+const Shadow = lazy(() => import('../views/utilities/Shadow'))
+const Icons = lazy(() => import('../views/icons/Icons'))
 
 const Router = [
   {

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { IconButton, Box, Badge, MenuItem, Typography, Divider } from '@mui/material';
 import Menu, { MenuProps } from '@mui/material/Menu';
 import * as dropdownData from './data';
-import Scrollbar from 'src/components/custom-scroll/Scrollbar';
 import { styled } from '@mui/material/styles';
 import { Icon } from '@iconify/react';
 
@@ -65,7 +64,7 @@ const Notifications = () => {
           },
         }}
       >
-        <Scrollbar sx={{ height: '120px' }}>
+       
           {dropdownData.notifications.slice(0,3).map((notification, index) => {
             return (
               <Box key={index}>
@@ -94,7 +93,6 @@ const Notifications = () => {
               </Box>
             );
           })}
-        </Scrollbar>
         <Divider />
       </StyledMenu>
     </Box>

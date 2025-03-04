@@ -3,7 +3,6 @@ import { styled, Container, Box, useTheme } from '@mui/material';
 import { Outlet } from 'react-router';
 // import Header from './vertical/header/Header';
 import Sidebar from './vertical/sidebar/Sidebar';
-import ScrollToTop from '../../components/shared/ScrollToTop';
 import Header from './vertical/header/Header';
 import Topbar from './vertical/header/Topbar';
 
@@ -64,9 +63,8 @@ const FullLayout: FC = () => {
             {/* ------------------------------------------- */}
 
             <Box sx={{ minHeight: 'calc(100vh - 170px)' }}>
-              <ScrollToTop>
-                <Outlet />
-              </ScrollToTop>
+
+              <Outlet />
             </Box>
 
             {/* ------------------------------------------- */}
