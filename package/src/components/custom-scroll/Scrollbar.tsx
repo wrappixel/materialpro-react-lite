@@ -1,8 +1,8 @@
 import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
+import "simplebar-react/dist/simplebar.min.css";
 import { Box, styled, SxProps } from '@mui/material';
 
-const SimpleBarStyle = styled(SimpleBar)(() => ({
+const SimpleBarStyle = styled(SimpleBar)(() => ({ 
   maxHeight: '100%',
 }));
 

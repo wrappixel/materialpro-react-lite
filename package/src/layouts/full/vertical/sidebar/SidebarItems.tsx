@@ -1,56 +1,97 @@
-import Menuitems from './MenuItems';
-import { useContext } from 'react';
-import { useLocation } from 'react-router';
-import { Box, List } from '@mui/material';
-import NavItem from './NavItem';
-import NavCollapse from './NavCollapse';
-import NavGroup from './NavGroup/NavGroup';
-import { DashboardContext } from 'src/context/DashboardContext';
+import { useLocation, NavLink } from 'react-router';
+import { Box } from "@mui/material";
+import {
+  Sidebar as MUI_Sidebar,
+  Menu,
+  MenuItem,
+  Submenu,
+} from "react-mui-sidebar";
+
+import Menuitems from "./MenuItems";
+import { Icon } from "@iconify/react";
+import { Upgrade } from "./Upgrade";
+
+const renderMenuItems = (items: any[], pathDirect: string) => {
+
+
+
+  return items.map((item) => {
+    if (item.subheader) {
+      // Display Subheader
+      return (
+        <Box sx={{ margin: "0 -24px", textTransform: 'uppercase', '& .MuiListSubheader-root': { fontWeight: '600 !important' } }} key={item.subheader}>
+          <Menu
+            subHeading={item.subheader}
+            key={item.subheader}
+
+          ><></></Menu>
+        </Box>
+      );
+    }
+
+    //If the item has children (submenu)
+    if (item.children) {
+      return (
+        <Submenu
+          key={item.id}
+          title={item.title}
+          borderRadius='999px'
+          icon={
+            item.icon ? (
+              <Icon icon={"solar:" + item.icon} width="20" height="20" />
+            ) : (
+              <Icon icon="mdi:circle" width="6" height="6" />
+            )
+          }
+        >
+          {renderMenuItems(item.children, pathDirect)}
+        </Submenu>
+      );
+    }
+
+    // If the item has no children, render a MenuItem
+    return (
+      <MenuItem
+        key={item.id}
+        isSelected={pathDirect === item?.href}
+        borderRadius='999px'
+        icon={
+          item.icon ? (
+            <Icon icon={"solar:" + item.icon} width="20" height="20" />
+          ) : (
+            <Icon icon="mdi:circle" width="6" height="6" />
+          )
+        }
+        component={NavLink}
+        link={item.href && item.href !== "" ? item.href : undefined}
+        target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}
+        badge={item.chip ? true : false}
+        badgeContent={item.chip || ""}
+        badgeColor='secondary'
+        badgeTextColor="#1b84ff"
+        disabled={item.disabled}
+      >
+        {item.title}
+      </MenuItem>
+
+
+    );
+  });
+};
 
 const SidebarItems = () => {
-
-
-  const {isMobileSidebar , setIsMobileSidebar} = useContext(DashboardContext);
-
-  const { pathname } = useLocation();
-  const pathDirect = pathname;
-  const pathWithoutLastPart = pathname.slice(0, pathname.lastIndexOf('/'));
-  const hideMenu: any =  '';
-
+  const location = useLocation();
+  const pathDirect = location.pathname;
 
   return (
-    <Box sx={{ px: 2 }} borderRadius={0}>
-      <List sx={{ pt: 0 }} className="sidebarNav">
-        {Menuitems.map((item) => {
-          // {/********SubHeader**********/}
-          if (item.subheader) {
-            return <NavGroup item={item} hideMenu={hideMenu} key={item.subheader} />;
-
-            // {/********If Sub Menu**********/}
-
-          } else if (item.children) {
-            return (
-              <NavCollapse
-                menu={item}
-                pathDirect={pathDirect}
-                hideMenu={hideMenu}
-                pathWithoutLastPart={pathWithoutLastPart}
-                level={1}
-                key={item.id}
-                chip={`${item.chip}`}
-                onClick={() => setIsMobileSidebar(!isMobileSidebar)}
-              />
-            );
-
-            // {/********If Sub No Menu**********/}
-          } else {
-            return (
-              <NavItem item={item} key={item.id} pathDirect={pathDirect} hideMenu={hideMenu} onClick={() => setIsMobileSidebar(!isMobileSidebar)} />
-            );
-          }
-        })}
-      </List>
+    <Box sx={{ px: "20px", overflowX: 'hidden' }}>
+      <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#43ced7"} themeSecondaryColor={'#1b84ff1a'}>
+        {renderMenuItems(Menuitems, pathDirect)}
+      </MUI_Sidebar>
+      <Upgrade />
     </Box>
   );
 };
+
 export default SidebarItems;
+

@@ -5,7 +5,6 @@ import { useContext } from "react";
 import SidebarItems from "./SidebarItems";
 import { DashboardContext } from "src/context/DashboardContext";
 import { Profile } from "./SidebarProfile/Profile";
-import { Upgrade } from "./Upgrade";
 
 const Sidebar = () => {
   const lgUp = useMediaQuery((theme: any) => theme.breakpoints.down("lg"));
@@ -60,14 +59,13 @@ const Sidebar = () => {
             >
               <Profile />
                
-              <Scrollbar sx={{ height: "calc(100% - 440px)" }}>
+              <Scrollbar sx={{ height: "calc(100% - 270px)" }}>
 
                 {/* ------------------------------------------- */}
                 {/* Sidebar Items */}
                 {/* ------------------------------------------- */}
                 <SidebarItems />
               </Scrollbar>
-              <Upgrade/>
             </Box>
             
           </Drawer>

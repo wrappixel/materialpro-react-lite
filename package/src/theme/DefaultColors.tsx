@@ -11,6 +11,7 @@ const baselightTheme = {
       main: '#43CED7',
       light: '#F2FCFC',
       dark: '#43CED7',
+      contrastText: '#ffffff',
     },
     success: {
       main: '#2cd07e',
@@ -65,74 +66,99 @@ const baselightTheme = {
       paper: '#ffffff',
     },
   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        a: {
+          textDecoration: "none",
+        },
+        '.simplebar-scrollbar:before': {
+          background: " #DFE5EF!important"
+        },
+        ".rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path":
+        {
+          clipPath: "inset(0 0 5% 0 round 20px)",
+        },
+        '.hover-text-primary:hover .text-hover': (theme: any) => ({
+          color: theme.palette.primary.main,
+        }),
+        '.MuiTypography-root, .MuiListSubheader-root, .MuiChip-label': {
+          fontFamily: '"poppins", sans !important'
+        },
+        '@keyframes gradient': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '50%': {
+            backgroundPosition: ' 100% 50%',
+          },
+          '100% ': {
+            backgroundPosition: ' 0% 50%',
+          },
+        },
+        '@keyframes blow': {
+          '0%': {
+            boxShadow: '0 0 0 0 rgba(0,0,0,.1)',
+            opacity: 1,
+            transform: 'scale3d(1,1,.5)',
+          },
+          '50%': {
+            boxShadow: ' 0 0 0 10px rgba(0,0,0,.1)',
+            opacity: 1,
+            transform: 'scale3d(1,1,.5)',
+          },
+          '100% ': {
+            boxShadow: '0 0 0 20px rgba(0,0,0,.1)',
+            opacity: 0,
+            transform: 'scale3d(1,1,.5)',
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 30,
+          boxShadow: 'none',
+          '&:hover': {
+            boxShadow: 'none'
+          }
+        },
+      },
+    },
+    MuiFab: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+          '&:hover': {
+            boxShadow: 'none'
+          }
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        root: {
+          borderRadius: "7px",
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#e5eaef !important',
+          },
+          borderRadius: "7px",
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline, &:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#1B84FF !important'
+          },
+
+        },
+      },
+    },
+  }
 };
 
-const baseDarkTheme = {
-  direction: 'ltr',
-  palette: {
-    primary: {
-      main: '#1B84FF',
-      light: '#253662',
-      dark: '#1B84FF',
-    },
-    secondary: {
-      main: '#21c1d6',
-      light: '#1c455d',
-      dark: '#21c1d6',
-    },
-    success: {
-      main: '#2cd07e',
-      light: '#1b3c48',
-      dark: '#2cd07e',
-      contrastText: '#ffffff',
-    },
-    info: {
-      main: '#725AF2',
-      light: '#223662',
-      dark: '#725AF2',
-      contrastText: '#ffffff',
-    },
-    error: {
-      main: '#F8285A',
-      light: '#4b313d',
-      dark: '#f3704d',
-      contrastText: '#ffffff',
-    },
-    warning: {
-      main: '#F6C000',
-      light: '#4d3a2a',
-      dark: '#ae8e59',
-      contrastText: '#ffffff',
-    },
-    purple: {
-      A50: '#dedaf9',
-      A100: '#6610f2',
-      A200: '#557fb9',
-    },
-    grey: {
-      100: '#1d2430',
-      200: '#465670',
-      300: '#7C8FAC',
-      400: '#DFE5EF',
-      500: '#EAEFF4',
-      600: '#F2F6FA',
-    },
-    text: {
-      primary: 'rgba(255,255,255,0.9)',
-      secondary: 'rgba(255,255,255,0.67)',
-    },
-    action: {
-      disabledBackground: 'rgba(73,82,88,0.12)',
-      hoverOpacity: 0.02,
-      hover: '#1d2430',
-    },
-    divider: '#1d2430',
-    background: {
-      default: '#1c222e',
-      dark: '#1c222e',
-      paper: '#171c26',
-    },
-  },
-};
 
-export { baseDarkTheme, baselightTheme };
+export { baselightTheme };

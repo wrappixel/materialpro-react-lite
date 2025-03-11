@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router';
 import { Box, Menu, Avatar, Typography, IconButton, Button } from '@mui/material';
 import * as dropdownData from './data';
-import { Stack } from '@mui/system';
-
 import ProfileImg from 'src/assets/images/profile/user-1.jpg';
 
 
@@ -74,22 +72,18 @@ const Profile = () => {
                 className="hover-text-primary"
               >
                 <Link to={profile.href}>
-                  <Stack direction="row" spacing={2}>
-                    <Box>
-                      <Typography
-                        variant="subtitle2"
-                        fontWeight={500}
-                        color="textPrimary"
-                        className="text-hover"
-                        noWrap
-                        sx={{
-                          width: '240px',
-                        }}
-                      >
-                        {profile.title}
-                      </Typography>
-                    </Box>
-                  </Stack>
+                  <Typography
+                    variant="subtitle2"
+                    fontWeight={500}
+                    color="textPrimary"
+                    className="text-hover" component='span'
+                    noWrap
+                    sx={{
+                      width: '240px',
+                    }}
+                  >
+                    {profile.title}
+                  </Typography>
                 </Link>
               </Box>
             </Box>
@@ -106,11 +100,9 @@ const Profile = () => {
             }}
             className="hover-text-primary"
           >
-            <Link to="/auth/auth1/login">
-            <Button variant="outlined"  color="primary" sx={{width:"100%"}}  target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-admin/">
-                Logout
-               </Button>
-            </Link>
+            <Button variant="outlined" component={Link} color="primary" sx={{ width: "100%" }} to="/auth/login">
+              Logout
+            </Button>
           </Box>
 
         </Box>

@@ -1,6 +1,5 @@
 
-import { Paper, Box, Grid } from '@mui/material';
-import PageContainer from 'src/components/container/PageContainer';
+import { Paper, Box, Grid2 as Grid } from '@mui/material';
 import DashboardCard from '../../components/shared/DashboardCard';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
@@ -17,34 +16,33 @@ const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 const Shadow = () => {
   return (
-    <PageContainer title="Shadow" description="this is Shadow">
 
-      <DashboardCard title="Shadow">
-        <Grid container spacing={2}>
-          {[lightTheme, darkTheme].map((theme, index) => (
-            <Grid item xs={6} key={index}>
-              <ThemeProvider theme={theme}>
-                <Box
-                  sx={{
-                    p: 2,
-                    bgcolor: 'background.default',
-                    display: 'grid',
-                    gridTemplateColumns: { md: '1fr 1fr' },
-                    gap: 2,
-                  }}
-                >
-                  {[0, 1, 2, 3, 4, 6, 8, 12, 16, 24].map((elevation) => (
-                    <Item key={elevation} elevation={elevation}>
-                      {`elevation=${elevation}`}
-                    </Item>
-                  ))}
-                </Box>
-              </ThemeProvider>
-            </Grid>
-          ))}
-        </Grid>
-      </DashboardCard>
-    </PageContainer>
+
+    <DashboardCard title="Shadow">
+      <Grid container spacing={2}>
+        {[lightTheme, darkTheme].map((theme, index) => (
+          <Grid size={6} key={index}>
+            <ThemeProvider theme={theme}>
+              <Box
+                sx={{
+                  p: 2,
+                  bgcolor: 'background.default',
+                  display: 'grid',
+                  gridTemplateColumns: { md: '1fr 1fr' },
+                  gap: 2,
+                }}
+              >
+                {[0, 1, 2, 3, 4, 6, 8, 12, 16, 24].map((elevation) => (
+                  <Item key={elevation} elevation={elevation}>
+                    {`elevation=${elevation}`}
+                  </Item>
+                ))}
+              </Box>
+            </ThemeProvider>
+          </Grid>
+        ))}
+      </Grid>
+    </DashboardCard>
   );
 };
 

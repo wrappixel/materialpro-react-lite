@@ -1,23 +1,15 @@
 import _ from 'lodash';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, Direction, ThemeOptions, Shadows } from '@mui/material/styles';
 import { useEffect } from 'react';
-import components from './Components';
 import typography from './Typography';
 import { shadows } from './Shadows';
-import { LightThemeColors } from './LightThemeColors';
-import {  baselightTheme } from './DefaultColors';
-import * as locales from '@mui/material/locale';
+import { baselightTheme } from './DefaultColors';
 
+export const BuildTheme = () => {
 
-export const BuildTheme = (config: any = {}) => {
-  const themeOptions = LightThemeColors.find((theme) => theme.name === config.theme);
-
-
-
-  const defaultTheme = baselightTheme ;
-  const defaultShadow =  shadows;
-  const themeSelect =  themeOptions;
-  const baseMode = {
+  const defaultTheme = baselightTheme;
+  const defaultShadow: Shadows = shadows as Shadows; // Ensuring correct type
+  const baseMode: ThemeOptions = {
     palette: {
       mode: 'light',
     },
@@ -26,22 +18,17 @@ export const BuildTheme = (config: any = {}) => {
     },
     shadows: defaultShadow,
     typography: typography,
+    direction: 'ltr' as Direction,
   };
   const theme = createTheme(
-    _.merge({}, baseMode, defaultTheme, locales, themeSelect, {
-      direction: config.direction,
-    }),
+    _.merge({}, baseMode, defaultTheme)
   );
-  theme.components = components(theme);
 
   return theme;
 };
 
 const ThemeSettings = () => {
-  const theme = BuildTheme({
-    direction: 'ltr',
-    theme: 'BLUE_THEME',
-  });
+  const theme = BuildTheme();
   useEffect(() => {
     document.dir = 'ltr';
   }, []);

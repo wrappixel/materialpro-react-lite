@@ -8,7 +8,7 @@ export const Upgrade = () => {
             display={'flex'}
             alignItems="center"
             gap={2}
-            sx={{ m: 3, p: 3, bgcolor: `${'primary.light'}`, borderRadius: '8px' }}
+            sx={{ my: 3, p: 3, bgcolor: `${'primary.light'}`, borderRadius: '8px' }}
         >
             <>
                 <Box>

@@ -11,7 +11,6 @@ const MainWrapper = styled('div')(() => ({}));
 const PageWrapper = styled('div')(() => ({
   display: 'flex',
   flexGrow: 1,
-  paddingBottom: '60px',
   flexDirection: 'column',
   zIndex: 1,
   backgroundColor: 'transparent',
@@ -62,7 +61,7 @@ const FullLayout: FC = () => {
             {/* PageContent */}
             {/* ------------------------------------------- */}
 
-            <Box sx={{ minHeight: 'calc(100vh - 170px)' }}>
+            <Box mt={4} sx={{ minHeight: 'calc(100vh - 170px)' }}>
 
               <Outlet />
             </Box>
