@@ -5,6 +5,7 @@ import { Outlet } from 'react-router';
 import Sidebar from './vertical/sidebar/Sidebar';
 import Header from './vertical/header/Header';
 import Topbar from './vertical/header/Topbar';
+import Footer from './shared/footer/Footer';
 
 const MainWrapper = styled('div')(() => ({}));
 
@@ -61,15 +62,16 @@ const FullLayout: FC = () => {
             {/* PageContent */}
             {/* ------------------------------------------- */}
 
-            <Box mt={4} sx={{ minHeight: 'calc(100vh - 170px)' }}>
+            <Box mt={4} sx={{ minHeight: 'calc(100vh - 260px)' }}>
 
               <Outlet />
             </Box>
-
+            <Footer />
             {/* ------------------------------------------- */}
             {/* End Page */}
             {/* ------------------------------------------- */}
           </Container>
+           
         </PageWrapper>
       </MainWrapper>
     </>
