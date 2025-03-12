@@ -129,7 +129,7 @@ const LivePreviewDropdown: React.FC = () => {
         onClose={handleClose}
       >
         {MenuItems.map((item) => (
-          <StyledLink key={item.id} to={item.href}>
+          <StyledLink key={item.id} to={item.href} target="_blank">
             <MenuItem sx={{ gap: '4px', padding: '8px 16px' }} onClick={handleClose} disableRipple>
               <IconExternalLink size={18} />
               {item.title}

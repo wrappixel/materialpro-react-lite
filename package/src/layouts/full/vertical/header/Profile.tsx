@@ -64,6 +64,7 @@ const Profile = () => {
               <Box
                 sx={{
                   px: 2,
+                  borderRadius: '9px',
                   py: '10px',
                   '&:hover': {
                     backgroundColor: 'primary.light',
