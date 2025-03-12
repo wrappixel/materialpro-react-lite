@@ -70,6 +70,7 @@ const baselightTheme = {
     MuiCssBaseline: {
       styleOverrides: {
         a: {
+          //color: '#3A4752',
           textDecoration: "none",
         },
         '.simplebar-scrollbar:before': {

@@ -1,5 +1,5 @@
-import { useLocation, NavLink } from 'react-router';
-import { Box } from "@mui/material";
+import { useLocation, NavLink, Link } from 'react-router';
+import { Box, Typography } from "@mui/material";
 import {
   Sidebar as MUI_Sidebar,
   Menu,
@@ -62,7 +62,7 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
             <Icon icon="mdi:circle" width="6" height="6" />
           )
         }
-        component={NavLink}
+        component="div"
         link={item.href && item.href !== "" ? item.href : undefined}
         target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}
         badge={item.chip ? true : false}
@@ -71,7 +71,10 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         badgeTextColor="#1b84ff"
         disabled={item.disabled}
       >
-        {item.title}
+        <Link to={item.href} target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Typography component='span' color={pathDirect === item?.href ? '#fff' : 'inherit'}>
+            {item.title}</Typography>
+        </Link>
       </MenuItem>
 
 
