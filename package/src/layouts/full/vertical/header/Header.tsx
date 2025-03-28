@@ -135,7 +135,7 @@ const Header = () => {
               sx: {
                 mt: 1, // Ensures the menu appears slightly below the bell icon
                 boxShadow: 9, // Optional: Improves visibility with a shadow
-                minWidth: '200px', // Adjust width to ensure proper alignment
+                minWidth: '200px', // Adjust width to ensure proper alignment 
               },
             }}
           >
