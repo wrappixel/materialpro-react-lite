@@ -18,7 +18,7 @@ export const Upgrade = () => {
                         Check
                     </Button>
                 </Box>
-                <Box sx={{marginTop:"-35px",marginRight: "-24px"}}>
+                <Box sx={{marginTop:"-35px",marginRight: "-30px"}}>
                     <img alt="Remy Sharp" src={img1} width={100} />
                 </Box>
             </>
