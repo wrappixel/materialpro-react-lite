@@ -87,11 +87,11 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const MenuItems: MenuItemType[] = [
-  { id: 1, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/materialpro/?ref=376' },
-  { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376' },
-  { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376' },
-  { id: 4, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard/?ref=376' },
-  { id: 5, title: 'React Preview', href: 'https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376' },
+  { id: 1, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/materialpro/?ref=376#demos' },
+  { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376#demos' },
+  { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376#demos' },
+  { id: 4, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard/?ref=376#demos' },
+  { id: 5, title: 'React Preview', href: 'https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376#demos' },
 ];
 
 const LivePreviewDropdown: React.FC = () => {
