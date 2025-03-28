@@ -12,13 +12,13 @@ export const Upgrade = () => {
         >
             <>
                 <Box>
-                    <Typography variant="h6" mb={1}>Check Pro </br>
+                    <Typography variant="h6" mb={1}>Check Pro
                     Version</Typography>
                     <Button color="primary" target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376#demos" variant="contained" aria-label="logout" size="small">
                         Check
                     </Button>
                 </Box>
-                <Box mt="-35px">
+                <Box mt="-35px" mr="-24px">
                     <img alt="Remy Sharp" src={img1} width={100} />
                 </Box>
             </>
