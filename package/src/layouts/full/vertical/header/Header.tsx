@@ -22,19 +22,11 @@ const Header = () => {
     background: theme.palette.primary.main,
     justifyContent: 'center',
     position: "fixed",
-    top: "64px",
+    top: "72px",
     backdropFilter: 'blur(4px)',
-    [theme.breakpoints.down('lg')]: {
-      minHeight: '64px',
-      top: "90px"
-    },
     [theme.breakpoints.down('md')]: {
       minHeight: '64px',
-      top: "99px"
-    },
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '64px',
-      top: "134px"
+      top: "157px"
     },
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({

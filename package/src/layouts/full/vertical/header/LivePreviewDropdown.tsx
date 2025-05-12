@@ -11,6 +11,7 @@ import { Link } from 'react-router';
 interface MenuItemType {
   id: number;
   title: string;
+  img: string;
   href: string;
 }
 
@@ -29,14 +30,14 @@ const StyledMenu = styled((props: any) => (
   />
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
-    borderRadius: 6,
+    borderRadius: 7,
     marginTop: theme.spacing(1),
-    minWidth: 180,
-    color: 'rgb(55, 65, 81)',
+    minWidth: 200,
+    color: '#000c29',
     boxShadow:
-      'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+        'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
     '& .MuiMenu-list': {
-      padding: '10px 0',
+        padding: '16px',  
     },
     '& .MuiMenuItem-root': {
       '& .MuiSvgIcon-root': {
@@ -58,40 +59,39 @@ const StyledMenu = styled((props: any) => (
 }));
 
 const StyledLink = styled(Link)(({ theme }) => ({
-  textDecoration: 'none',
-  color: 'inherit',
-  '&:hover': {
-    color: theme.palette.primary.main,
-  },
+    textDecoration: 'none',
+    color: '#000c29',
+    borderRadius: '7px',
+    '&:hover': {
+        backgroundColor: '#000c290d',
+    },
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-  border: `1px solid ${theme.palette.primary.main}`,
-  color: theme.palette.primary.main,
-  padding: '6px 16px',
-  textTransform: 'none',
-  display: 'flex',
-  borderRadius: '999px',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  '&:hover': {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
-  },
-  '& .MuiButton-startIcon': {
-    marginRight: '4px',
-  },
-  '& .MuiButton-endIcon': {
-    marginLeft: '4px',
-  },
+  border: `1px solid rgba(255,255,255,.4)`,
+    fontSize: '16px',
+    color: '#ffffff',
+    padding: '5px 16px',
+    textTransform: 'none',
+    display: 'flex',
+    borderRadius: '7px',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    '&:hover': {
+        backgroundColor: '#8d70f8',
+    },
+    '& .MuiButton-endIcon': {
+        marginLeft: '4px',
+    },
 }));
 
-const MenuItems: MenuItemType[] = [
-  { id: 1, title: 'Bootstrap Preview', href: 'https://www.wrappixel.com/templates/materialpro/?ref=376#demos' },
-  { id: 2, title: 'Angular Preview', href: 'https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376#demos' },
-  { id: 3, title: 'VueJs Preview', href: 'https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376#demos' },
-  { id: 4, title: 'NextJs Preview', href: 'https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard/?ref=376#demos' },
-  { id: 5, title: 'React Preview', href: 'https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376#demos' },
+const MenuItems: MenuItemType[] = [   
+    { id: 1, img: 'src/assets/images/svgs/react-cat-icon.svg', title: 'ReactJs Version', href: 'https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376#demos' },
+    { id: 2, img: 'src/assets/images/svgs/next-cat-icon.svg', title: 'NextJs Version', href: 'https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376#demos' },
+    { id: 3, img: 'src/assets/images/svgs/angular-cat-icon.svg', title: 'Angular Version', href: 'https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376#demos' },
+    { id: 4, img: 'src/assets/images/svgs/vue-cat-icon.svg', title: 'VueJs Version', href: 'https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376#demos' },
+    { id: 5, img: 'src/assets/images/svgs/nuxt-cat-icon.svg', title: 'NuxtJs Version', href: 'https://www.wrappixel.com/templates/materialpro-nuxtjs/?ref=376#demos' },
+    { id: 6, img: 'src/assets/images/svgs/bt-cat-icon.svg', title: 'Bootstrap Version', href: 'https://www.wrappixel.com/templates/materialpro/?ref=376#demos' },
 ];
 
 const LivePreviewDropdown: React.FC = () => {
@@ -108,36 +108,35 @@ const LivePreviewDropdown: React.FC = () => {
 
   return (
     <div>
-      <StyledButton
-        id="demo-customized-button"
-        aria-controls={open ? 'demo-customized-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        variant="outlined"
-        disableElevation
-        onClick={handleClick}
-        endIcon={<KeyboardArrowDownIcon />}
-        startIcon={<IconDeviceLaptop size={18} />}
-      >
-        Live Preview
-      </StyledButton>
-      <StyledMenu
-        id="demo-customized-menu"
-        MenuListProps={{ 'aria-labelledby': 'demo-customized-button' }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
-        {MenuItems.map((item) => (
-          <StyledLink key={item.id} to={item.href} target="_blank">
-            <MenuItem sx={{ gap: '4px', padding: '8px 16px' }} onClick={handleClose} disableRipple>
-              <IconExternalLink size={18} />
-              {item.title}
-            </MenuItem>
-          </StyledLink>
-        ))}
-      </StyledMenu>
-    </div>
+            <StyledButton
+                id="demo-customized-button"
+                aria-controls={open ? 'demo-customized-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                variant="outlined"
+                disableElevation
+                onClick={handleClick}
+                endIcon={<KeyboardArrowDownIcon />}
+            >
+                Live Preview
+            </StyledButton>
+            <StyledMenu
+                id="demo-customized-menu"
+                MenuListProps={{ 'aria-labelledby': 'demo-customized-button' }}
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+            >
+                {MenuItems.map((item) => (
+                    <StyledLink key={item.id} to={item.href} target='blank'>
+                        <MenuItem sx={{ gap: '12px', borderRadius: '7px', padding: '12px 18px', ":hover": { backgroundColor: "#000c290d" } }} onClick={handleClose} disableRipple>
+                            <img src={item.img} width={18} alt="logo" />
+                            {item.title} 
+                        </MenuItem>
+                    </StyledLink>
+                ))}
+            </StyledMenu>
+        </div>
   );
 };
 
