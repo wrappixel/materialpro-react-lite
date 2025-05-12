@@ -4,7 +4,6 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { IconDeviceLaptop, IconExternalLink } from '@tabler/icons-react';
 import { Link } from 'react-router';
 
 
@@ -58,7 +57,7 @@ const StyledMenu = styled((props: any) => (
   },
 }));
 
-const StyledLink = styled(Link)(({ theme }) => ({
+const StyledLink = styled(Link)(() => ({
     textDecoration: 'none',
     color: '#000c29',
     borderRadius: '7px',
@@ -67,7 +66,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
     },
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton = styled(Button)(() => ({
   border: `1px solid rgba(255,255,255,.4)`,
     fontSize: '16px',
     color: '#ffffff',

@@ -1,5 +1,4 @@
 import { Box, AppBar, Toolbar, styled, Stack, Button } from '@mui/material';
-import { IconLifebuoy, IconGift, IconBriefcase } from '@tabler/icons-react';
 import { Typography } from '@mui/material';
 import { Link } from 'react-router';
 import { Icon } from "@iconify/react";
