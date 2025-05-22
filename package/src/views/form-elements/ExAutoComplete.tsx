@@ -1,8 +1,8 @@
-import { Grid2 as Grid, Box } from "@mui/material";
-import { ComboBoxAutocomplete } from "../../components/forms/AutoComplete/ComboBoxAutocomplete";
-import { MultipleValuesAutocomplete } from "../../components/forms/AutoComplete/MultipleValuesAutocomplete";
-import { CheckboxesAutocomplete } from "../../components/forms/AutoComplete/CheckboxesAutocomplete";
-import { SizesAutocomplete } from "../../components/forms/AutoComplete/SizesAutocomplete";
+import { Grid, Box } from '@mui/material';
+import { ComboBoxAutocomplete } from '../../components/forms/AutoComplete/ComboBoxAutocomplete';
+import { MultipleValuesAutocomplete } from '../../components/forms/AutoComplete/MultipleValuesAutocomplete';
+import { CheckboxesAutocomplete } from '../../components/forms/AutoComplete/CheckboxesAutocomplete';
+import { SizesAutocomplete } from '../../components/forms/AutoComplete/SizesAutocomplete';
 
 const ExAutoComplete = () => {
   // 2
@@ -14,8 +14,8 @@ const ExAutoComplete = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
+            display: 'flex',
+            alignItems: 'stretch',
           }}
         >
           <ComboBoxAutocomplete />
@@ -25,8 +25,8 @@ const ExAutoComplete = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
+            display: 'flex',
+            alignItems: 'stretch',
           }}
         >
           <MultipleValuesAutocomplete />
@@ -35,10 +35,9 @@ const ExAutoComplete = () => {
         {/* ------------------------- row 6 ------------------------- */}
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
-
           sx={{
-            display: "flex",
-            alignItems: "stretch",
+            display: 'flex',
+            alignItems: 'stretch',
           }}
         >
           <CheckboxesAutocomplete />
@@ -47,8 +46,8 @@ const ExAutoComplete = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
+            display: 'flex',
+            alignItems: 'stretch',
           }}
         >
           <SizesAutocomplete />

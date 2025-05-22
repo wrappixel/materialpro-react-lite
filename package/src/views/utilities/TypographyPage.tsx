@@ -1,5 +1,5 @@
 
-import { Typography, Grid2 as Grid, CardContent } from '@mui/material';
+import { Typography, Grid, CardContent } from '@mui/material';
 import DashboardCard from '../../components/shared/DashboardCard';
 import BlankCard from 'src/components/shared/BlankCard';
 

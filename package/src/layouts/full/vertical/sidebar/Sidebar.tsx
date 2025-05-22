@@ -35,17 +35,19 @@ const Sidebar = () => {
             anchor="left"
             open
             variant="permanent"
-            PaperProps={{
-              sx: {
-                transition: theme.transitions.create("width", {
-                  duration: theme.transitions.duration.shortest,
-                }),
-                width: toggleWidth,
-                boxSizing: "border-box",
-                border: "0",
-                top: '136px',
-                boxShadow: "1px 0 20px #00000014",
-              }, 
+            slotProps={{
+              paper: {
+                sx: {
+                  transition: theme.transitions.create("width", {
+                    duration: theme.transitions.duration.shortest,
+                  }),
+                  width: toggleWidth,
+                  boxSizing: "border-box",
+                  border: "0",
+                  top: '136px',
+                  boxShadow: "1px 0 20px #00000014",
+                }, 
+              }
             }}
           >
             {/* ------------------------------------------- */}
@@ -76,12 +78,14 @@ const Sidebar = () => {
           open={isMobileSidebar}
           onClose={() => setIsMobileSidebar(false)}
           variant="temporary"
-          PaperProps={{
-            sx: {
-              width: '256px',
-              border: "0 !important",
-              boxShadow: (theme) => theme.shadows[8],
-            },
+          slotProps={{
+            paper: {
+              sx: {
+                width: '256px',
+                border: "0 !important",
+                boxShadow: (theme) => theme.shadows[8],
+              },
+            }
           }}
         >
           {/* ------------------------------------------- */}

@@ -1,33 +1,32 @@
-import React from "react";
+import React from 'react';
 import {
-
   TextField,
   FormControlLabel,
   Checkbox,
   Button,
-  Grid2 as Grid,
+  Grid,
   RadioGroup,
   Radio,
   FormControl,
   MenuItem,
-} from "@mui/material";
-import BaseCard from "../../../components/BaseCard/BaseCard";
+} from '@mui/material';
+import BaseCard from '../../../components/BaseCard/BaseCard';
 const numbers = [
   {
-    value: "one",
-    label: "One",
+    value: 'one',
+    label: 'One',
   },
   {
-    value: "two",
-    label: "Two",
+    value: 'two',
+    label: 'Two',
   },
   {
-    value: "three",
-    label: "Three",
+    value: 'three',
+    label: 'Three',
   },
   {
-    value: "four",
-    label: "Four",
+    value: 'four',
+    label: 'Four',
   },
 ];
 
@@ -42,13 +41,13 @@ const FbDefaultForm = () => {
     setState({ ...state, [event.target.name]: event.target.checked });
   };
 
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = React.useState('');
 
   const handleChange2 = (event: any) => {
     setValue(event.target.value);
   };
 
-  const [number, setNumber] = React.useState("");
+  const [number, setNumber] = React.useState('');
 
   const handleChange3 = (event: any) => {
     setNumber(event.target.value);

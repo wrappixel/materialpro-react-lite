@@ -104,16 +104,18 @@ const MyContacts = () => {
                   </ListItemAvatar>
                   <ListItemText
                     primary={contact.title}
-                    primaryTypographyProps={{
-                      fontSize: "16px",
-                      fontWeight: 500,
-                      mb: "4px",
-                    }}
-                    secondaryTypographyProps={{
-                      fontSize: "14px",
-                    }}
                     secondary={contact.subtext}
-                  />
+                    slotProps={{
+                      primary: {
+                        fontSize: "16px",
+                        fontWeight: 500,
+                        mb: "4px",
+                      },
+
+                      secondary: {
+                        fontSize: "14px",
+                      }
+                    }} />
                 </ListItemButton>
               </ListItem>
             ))}

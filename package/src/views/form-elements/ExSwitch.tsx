@@ -1,12 +1,6 @@
-import {
-  Grid2 as Grid,
-  Box,
-  Switch,
-  FormGroup,
-  FormControlLabel,
-} from "@mui/material";
+import { Grid, Box, Switch, FormGroup, FormControlLabel } from '@mui/material';
 
-import BaseCard from "../../components/BaseCard/BaseCard";
+import BaseCard from '../../components/BaseCard/BaseCard';
 
 const ExSwitch = () => {
   // 2
@@ -18,11 +12,12 @@ const ExSwitch = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Switch">
-            <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: 'center' }}>
               <Switch defaultChecked />
               <Switch />
               <Switch disabled defaultChecked />
@@ -35,21 +30,15 @@ const ExSwitch = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Switch with Label">
-            <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: 'center' }}>
               <FormGroup>
-                <FormControlLabel
-                  control={<Switch defaultChecked />}
-                  label="Label"
-                />
-                <FormControlLabel
-                  disabled
-                  control={<Switch />}
-                  label="Disabled"
-                />
+                <FormControlLabel control={<Switch defaultChecked />} label="Label" />
+                <FormControlLabel disabled control={<Switch />} label="Disabled" />
               </FormGroup>
             </Box>
           </BaseCard>
@@ -59,11 +48,12 @@ const ExSwitch = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Sizes">
-            <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: 'center' }}>
               <Switch defaultChecked size="small" />
               <Switch defaultChecked />
             </Box>
@@ -74,11 +64,12 @@ const ExSwitch = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Colors">
-            <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: 'center' }}>
               <Switch defaultChecked />
               <Switch defaultChecked color="secondary" />
               <Switch defaultChecked color="error" />
@@ -93,11 +84,12 @@ const ExSwitch = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Label Placement">
-            <Box sx={{ textAlign: "center" }}>
+            <Box sx={{ textAlign: 'center' }}>
               <FormGroup aria-label="position" row>
                 <FormControlLabel
                   value="top"

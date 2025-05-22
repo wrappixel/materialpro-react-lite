@@ -1,13 +1,7 @@
-import React from "react";
-import {
-  Grid2 as Grid,
-  Box,
-  Radio,
-  FormControlLabel,
-  RadioGroup,
-} from "@mui/material";
+import React from 'react';
+import { Grid, Box, Radio, FormControlLabel, RadioGroup } from '@mui/material';
 
-import BaseCard from "../../components/BaseCard/BaseCard";
+import BaseCard from '../../components/BaseCard/BaseCard';
 
 const ExRadio = () => {
   // 2
@@ -17,7 +11,7 @@ const ExRadio = () => {
     setChecked(event.target.checked);
   };
 
-  const [selectedValue, setSelectedValue] = React.useState("a");
+  const [selectedValue, setSelectedValue] = React.useState('a');
   const handleChange2 = (event: any) => {
     setSelectedValue(event.target.value);
   };
@@ -26,8 +20,8 @@ const ExRadio = () => {
     checked: selectedValue === item,
     onChange: handleChange2,
     value: item,
-    name: "size-radio-button-demo",
-    inputProps: { "aria-label": item },
+    name: 'size-radio-button-demo',
+    inputProps: { 'aria-label': item },
   });
   return (
     <Box>
@@ -36,29 +30,20 @@ const ExRadio = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Radio">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
-              <Radio
-                checked={checked}
-                onChange={handleChange}
-                inputProps={{ 'aria-label': 'A' }}
-              />
+              <Radio checked={checked} onChange={handleChange} inputProps={{ 'aria-label': 'A' }} />
 
-              <Radio
-                disabled
-                inputProps={{ "aria-label": "disabled checked checkbox" }}
-              />
-              <Radio
-                color="default"
-                inputProps={{ "aria-label": "checkbox with default color" }}
-              />
+              <Radio disabled inputProps={{ 'aria-label': 'disabled checked checkbox' }} />
+              <Radio color="default" inputProps={{ 'aria-label': 'checkbox with default color' }} />
             </Box>
           </BaseCard>
         </Grid>
@@ -66,37 +51,38 @@ const ExRadio = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Colors">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               <Radio
                 checked={checked}
                 onChange={handleChange}
                 color="primary"
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
               />
 
               <Radio
                 checked={checked}
                 onChange={handleChange}
                 color="secondary"
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
               />
 
               <Radio
                 checked={checked}
                 onChange={handleChange}
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
                 sx={{
-                  color: "success.main",
-                  "&.Mui-checked": {
-                    color: "success.main",
+                  color: 'success.main',
+                  '&.Mui-checked': {
+                    color: 'success.main',
                   },
                 }}
               />
@@ -104,11 +90,11 @@ const ExRadio = () => {
               <Radio
                 checked={checked}
                 onChange={handleChange}
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
                 sx={{
-                  color: "error.main",
-                  "&.Mui-checked": {
-                    color: "error.main",
+                  color: 'error.main',
+                  '&.Mui-checked': {
+                    color: 'error.main',
                   },
                 }}
               />
@@ -116,11 +102,11 @@ const ExRadio = () => {
               <Radio
                 checked={checked}
                 onChange={handleChange}
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
                 sx={{
-                  color: "warning.main",
-                  "&.Mui-checked": {
-                    color: "warning.main",
+                  color: 'warning.main',
+                  '&.Mui-checked': {
+                    color: 'warning.main',
                   },
                 }}
               />
@@ -128,11 +114,11 @@ const ExRadio = () => {
               <Radio
                 checked={checked}
                 onChange={handleChange2}
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
                 sx={{
-                  color: "primary.main",
-                  "&.Mui-checked": {
-                    color: "primary.main",
+                  color: 'primary.main',
+                  '&.Mui-checked': {
+                    color: 'primary.main',
                   },
                 }}
               />
@@ -143,21 +129,22 @@ const ExRadio = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Sizes">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
-              <Radio {...controlProps("a")} size="small" />
-              <Radio {...controlProps("b")} />
+              <Radio {...controlProps('a')} size="small" />
+              <Radio {...controlProps('b')} />
               <Radio
-                {...controlProps("c")}
+                {...controlProps('c')}
                 sx={{
-                  "& .MuiSvgIcon-root": {
+                  '& .MuiSvgIcon-root': {
                     fontSize: 28,
                   },
                 }}
@@ -170,22 +157,13 @@ const ExRadio = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Placement">
-            <RadioGroup
-              row
-              aria-label="position"
-              name="position"
-              defaultValue="top"
-            >
-              <FormControlLabel
-                value="top"
-                control={<Radio />}
-                label="Top"
-                labelPlacement="top"
-              />
+            <RadioGroup row aria-label="position" name="position" defaultValue="top">
+              <FormControlLabel value="top" control={<Radio />} label="Top" labelPlacement="top" />
               <FormControlLabel
                 value="start"
                 control={<Radio />}
@@ -207,13 +185,14 @@ const ExRadio = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Color with Label">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               <FormControlLabel
@@ -224,7 +203,7 @@ const ExRadio = () => {
               />
               <FormControlLabel
                 value="end"
-                control={<Radio color="secondary" defaultChecked  />}
+                control={<Radio color="secondary" defaultChecked />}
                 label="Secondary"
                 labelPlacement="end"
               />
@@ -232,11 +211,10 @@ const ExRadio = () => {
                 value="end"
                 control={
                   <Radio
-                    
                     sx={{
-                      color: "success.main",
-                      "&.Mui-checked": {
-                        color: "success.main",
+                      color: 'success.main',
+                      '&.Mui-checked': {
+                        color: 'success.main',
                       },
                     }}
                   />
@@ -249,11 +227,10 @@ const ExRadio = () => {
                 value="end"
                 control={
                   <Radio
-                    
                     sx={{
-                      color: "error.main",
-                      "&.Mui-checked": {
-                        color: "error.main",
+                      color: 'error.main',
+                      '&.Mui-checked': {
+                        color: 'error.main',
                       },
                     }}
                   />
@@ -266,11 +243,10 @@ const ExRadio = () => {
                 value="end"
                 control={
                   <Radio
-                    
                     sx={{
-                      color: "warning.main",
-                      "&.Mui-checked": {
-                        color: "warning.main",
+                      color: 'warning.main',
+                      '&.Mui-checked': {
+                        color: 'warning.main',
                       },
                     }}
                   />

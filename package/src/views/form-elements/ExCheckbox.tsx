@@ -1,14 +1,7 @@
-import React from "react";
-import {
-  Grid2 as Grid,
-  Box,
-  Checkbox,
-  FormGroup,
-  FormControlLabel,
-  FormControl,
-} from "@mui/material";
+import React from 'react';
+import { Grid, Box, Checkbox, FormGroup, FormControlLabel, FormControl } from '@mui/material';
 
-import BaseCard from "../../components/BaseCard/BaseCard";
+import BaseCard from '../../components/BaseCard/BaseCard';
 
 import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlineBlankOutlined';
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
@@ -29,35 +22,36 @@ const ExCheckbox = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default Checkbox">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               <Checkbox
                 checked={checked}
                 onChange={handleChange}
-                inputProps={{ "aria-label": "primary checkbox" }}
+                inputProps={{ 'aria-label': 'primary checkbox' }}
               />
 
               <Checkbox
                 disabled
                 checked
-                inputProps={{ "aria-label": "disabled checked checkbox" }}
+                inputProps={{ 'aria-label': 'disabled checked checkbox' }}
               />
               <Checkbox
                 defaultChecked
                 indeterminate
-                inputProps={{ "aria-label": "indeterminate checkbox" }}
+                inputProps={{ 'aria-label': 'indeterminate checkbox' }}
               />
               <Checkbox
                 defaultChecked
                 color="default"
-                inputProps={{ "aria-label": "checkbox with default color" }}
+                inputProps={{ 'aria-label': 'checkbox with default color' }}
               />
             </Box>
           </BaseCard>
@@ -66,49 +60,50 @@ const ExCheckbox = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Default with Colors">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               <Checkbox
                 defaultChecked
                 color="primary"
-                inputProps={{ "aria-label": "checkbox with default color" }}
+                inputProps={{ 'aria-label': 'checkbox with default color' }}
               />
               <Checkbox
                 defaultChecked
                 color="secondary"
-                inputProps={{ "aria-label": "checkbox with default color" }}
+                inputProps={{ 'aria-label': 'checkbox with default color' }}
               />
               <Checkbox
                 defaultChecked
                 sx={{
-                  color: "success.main",
-                  "&.Mui-checked": {
-                    color: "success.main",
+                  color: 'success.main',
+                  '&.Mui-checked': {
+                    color: 'success.main',
                   },
                 }}
               />
               <Checkbox
                 defaultChecked
                 sx={{
-                  color: "error.main",
-                  "&.Mui-checked": {
-                    color: "error.main",
+                  color: 'error.main',
+                  '&.Mui-checked': {
+                    color: 'error.main',
                   },
                 }}
               />
               <Checkbox
                 defaultChecked
                 sx={{
-                  color: "warning.main",
-                  "&.Mui-checked": {
-                    color: "warning.main",
+                  color: 'warning.main',
+                  '&.Mui-checked': {
+                    color: 'warning.main',
                   },
                 }}
               />
@@ -119,16 +114,17 @@ const ExCheckbox = () => {
         <Grid
           size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Sizes & Custom icon">
             <Box>
               <FormGroup
                 row
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
+                  display: 'flex',
+                  justifyContent: 'center',
                 }}
               >
                 <FormControlLabel
@@ -170,22 +166,23 @@ const ExCheckbox = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Placement">
             <FormControl
               component="fieldset"
               sx={{
-                display: "flex",
-                justifyContent: "center",
+                display: 'flex',
+                justifyContent: 'center',
               }}
             >
               <FormGroup
                 aria-label="position"
                 row
                 sx={{
-                  justifyContent: "center",
+                  justifyContent: 'center',
                 }}
               >
                 <FormControlLabel
@@ -221,13 +218,14 @@ const ExCheckbox = () => {
         <Grid
           size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
-            display: "flex",
-            alignItems: "stretch",
-          }}>
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
           <BaseCard title="Color with Label">
             <Box
               sx={{
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               <FormControlLabel
@@ -248,9 +246,9 @@ const ExCheckbox = () => {
                   <Checkbox
                     defaultChecked
                     sx={{
-                      color: "success.main",
-                      "&.Mui-checked": {
-                        color: "success.main",
+                      color: 'success.main',
+                      '&.Mui-checked': {
+                        color: 'success.main',
                       },
                     }}
                   />
@@ -265,9 +263,9 @@ const ExCheckbox = () => {
                   <Checkbox
                     defaultChecked
                     sx={{
-                      color: "error.main",
-                      "&.Mui-checked": {
-                        color: "error.main",
+                      color: 'error.main',
+                      '&.Mui-checked': {
+                        color: 'error.main',
                       },
                     }}
                   />
@@ -282,9 +280,9 @@ const ExCheckbox = () => {
                   <Checkbox
                     defaultChecked
                     sx={{
-                      color: "warning.main",
-                      "&.Mui-checked": {
-                        color: "warning.main",
+                      color: 'warning.main',
+                      '&.Mui-checked': {
+                        color: 'warning.main',
                       },
                     }}
                   />

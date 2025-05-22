@@ -1,5 +1,5 @@
-import { Grid2 as Grid } from "@mui/material";
-import { FbDefaultForm } from "./fb-elements/index";
+import { Grid } from '@mui/material';
+import { FbDefaultForm } from './fb-elements/index';
 
 const FormLayouts = () => {
   return (

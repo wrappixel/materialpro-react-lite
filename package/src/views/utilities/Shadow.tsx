@@ -1,5 +1,4 @@
-
-import { Paper, Box, Grid2 as Grid } from '@mui/material';
+import { Paper, Box, Grid } from '@mui/material';
 import DashboardCard from '../../components/shared/DashboardCard';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
@@ -16,8 +15,6 @@ const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 const Shadow = () => {
   return (
-
-
     <DashboardCard title="Shadow">
       <Grid container spacing={2}>
         {[lightTheme, darkTheme].map((theme, index) => (

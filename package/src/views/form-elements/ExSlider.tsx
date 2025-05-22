@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import { Grid2 as Grid, Box, Slider } from "@mui/material";
+'use client';
+import React from 'react';
+import { Grid, Box, Slider } from '@mui/material';
 
-import VolumeUpOutlinedIcon from "@mui/icons-material/VolumeUpOutlined";
-import VolumeDownOutlinedIcon from "@mui/icons-material/VolumeDownOutlined";
-import BaseCard from "src/components/BaseCard/BaseCard";
+import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
+import VolumeDownOutlinedIcon from '@mui/icons-material/VolumeDownOutlined';
+import BaseCard from 'src/components/BaseCard/BaseCard';
 
 const valuetext = (value: number) => {
   return `${value}°C`;
@@ -43,7 +43,7 @@ const ExSlider = () => {
         {/* Volume Slider */}
         <Grid size={{ xs: 12, lg: 4, sm: 6 }}>
           <BaseCard title="Default Volume Slider">
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <VolumeDownOutlinedIcon />
               <Slider aria-label="Volume" value={value} onChange={handleChange} />
               <VolumeUpOutlinedIcon />
@@ -71,7 +71,7 @@ const ExSlider = () => {
         <Grid size={{ xs: 12, lg: 4, sm: 6 }}>
           <BaseCard title="Default Range Slider">
             <Slider
-              getAriaLabel={() => "Temperature range"}
+              getAriaLabel={() => 'Temperature range'}
               value={value2}
               onChange={handleChange2}
               valueLabelDisplay="auto"

@@ -1,7 +1,16 @@
 import {
-  IconButton, Box, AppBar, useMediaQuery, Toolbar, styled, Stack, Button, Menu,
-  MenuItem, Typography,
-  Badge
+  IconButton,
+  Box,
+  AppBar,
+  useMediaQuery,
+  Toolbar,
+  styled,
+  Stack,
+  Button,
+  Menu,
+  MenuItem,
+  Typography,
+  Badge,
 } from '@mui/material';
 import Profile from './Profile';
 import Logo from '../../shared/logo/Logo';
@@ -14,19 +23,18 @@ const Header = () => {
   const [_height, setHeight] = useState('0px');
   const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up('lg'));
 
-
   const toggleWidth = '256px';
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none !important',
     background: theme.palette.primary.main,
     justifyContent: 'center',
-    position: "fixed",
-    top: "72px",
+    position: 'fixed',
+    top: '72px',
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.down('md')]: {
       minHeight: '64px',
-      top: "157px"
+      top: '157px',
     },
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
@@ -49,18 +57,16 @@ const Header = () => {
 
   const { isMobileSidebar, setIsMobileSidebar } = useContext(DashboardContext);
 
-
   // notification
   const [anchorEl, setAnchorEl] = useState(null);
 
   const [menuPosition, setMenuPosition] = useState<{ top: number; left: number } | null>(null);
 
-
   const handleClick = (event: any) => {
     const rect = event.currentTarget.getBoundingClientRect(); // Get exact position
     setMenuPosition({
       top: rect.bottom + window.scrollY, // Position menu below the icon
-      left: rect.left + window.scrollX,  // Align with icon
+      left: rect.left + window.scrollX, // Align with icon
     });
     setAnchorEl(event.currentTarget);
   };
@@ -71,7 +77,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBarStyled color="default" >
+      <AppBarStyled color="default">
         <ToolbarStyled>
           {/* ------------------------------------------- */}
           {/* Logo */}
@@ -91,11 +97,7 @@ const Header = () => {
             <IconButton
               color="inherit"
               aria-label="menu"
-              onClick={
-                lgUp
-                  ? () => { }
-                  : () => setIsMobileSidebar(!isMobileSidebar)
-              }
+              onClick={lgUp ? () => {} : () => setIsMobileSidebar(!isMobileSidebar)}
             >
               <Icon icon="solar:list-bold" height={20} />
             </IconButton>
@@ -122,12 +124,16 @@ const Header = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
             anchorReference="anchorPosition" // Use custom positioning
-            anchorPosition={menuPosition ? { top: menuPosition.top, left: menuPosition.left } : undefined}
-            PaperProps={{
-              sx: {
-                mt: 1, // Ensures the menu appears slightly below the bell icon
-                boxShadow: 9, // Optional: Improves visibility with a shadow
-                minWidth: '200px', // Adjust width to ensure proper alignment 
+            anchorPosition={
+              menuPosition ? { top: menuPosition.top, left: menuPosition.left } : undefined
+            }
+            slotProps={{
+              paper: {
+                sx: {
+                  mt: 1, // Ensures the menu appears slightly below the bell icon
+                  boxShadow: 9, // Optional: Improves visibility with a shadow
+                  minWidth: '200px', // Adjust width to ensure proper alignment
+                },
               },
             }}
           >
@@ -139,25 +145,32 @@ const Header = () => {
             </MenuItem>
           </Menu>
 
-
           <Box flexGrow={1} />
 
           {lgUp ? (
             <>
               <Stack spacing={2} direction="row" alignItems="center">
-                <Button variant="contained" color="success" target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376#demos">
+                <Button
+                  variant="contained"
+                  color="success"
+                  target="_blank"
+                  href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376#demos"
+                >
                   Check Pro Template
                 </Button>
                 <Profile />
               </Stack>
             </>
-          ) : (
-            null
-          )}
+          ) : null}
           {lgUp ? null : (
             <>
               <Stack spacing={2} direction="row" alignItems="center">
-                <Button variant="contained" color="success" target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376">
+                <Button
+                  variant="contained"
+                  color="success"
+                  target="_blank"
+                  href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376"
+                >
                   Check Pro Template
                 </Button>
                 <Profile />
