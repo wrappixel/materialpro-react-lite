@@ -71,13 +71,16 @@ const SalesOverview = () => {
 
   return (
     <>
-
       <DashboardCard
         title="Sales Overview"
         subtitle="Ample Admin Vs Pixel Admin"
         action={
-          <Stack spacing={3} mt={5} direction="row">
-            <Stack direction="row" spacing={1} alignItems="center">
+          <Stack spacing={3} direction="row" sx={{
+            mt: 5
+          }}>
+            <Stack direction="row" spacing={1} sx={{
+              alignItems: "center"
+            }}>
               <Avatar
                 sx={{
                   width: 9,
@@ -86,11 +89,15 @@ const SalesOverview = () => {
                   svg: { display: "none" },
                 }}
               ></Avatar>
-              <Typography variant="subtitle2" color="primary.main">
+              <Typography variant="subtitle2" sx={{
+                color: "primary.main"
+              }}>
                 Ample
               </Typography>
             </Stack>
-            <Stack direction="row" spacing={1} alignItems="center">
+            <Stack direction="row" spacing={1} sx={{
+              alignItems: "center"
+            }}>
               <Avatar
                 sx={{
                   width: 9,
@@ -99,14 +106,18 @@ const SalesOverview = () => {
                   svg: { display: "none" },
                 }}
               ></Avatar>
-              <Typography variant="subtitle2" color="secondary.main">
+              <Typography variant="subtitle2" sx={{
+                color: "secondary.main"
+              }}>
                 Pixel
               </Typography>
             </Stack>
           </Stack>
         }
       >
-        <Box height="295px" >
+        <Box sx={{
+          height: "295px"
+        }} >
           <Chart
             options={optionscolumnchart}
             series={seriescolumnchart}
@@ -116,7 +127,6 @@ const SalesOverview = () => {
           />
         </Box>
       </DashboardCard>
-
     </>
   );
 };

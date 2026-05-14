@@ -68,12 +68,12 @@ const renderMenuItems = (items: any[], pathDirect: string) => {
         badge={item.chip ? true : false}
         badgeContent={item.chip || ""}
         badgeColor='secondary'
-        badgeTextColor="#1b84ff"
         disabled={item.disabled}
       >
         <Link to={item.href} target={item.href.startsWith("https") ? "_blank" : "_self"} rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
           <Typography component='span' color={pathDirect === item?.href ? '#fff' : 'inherit'}>
-            {item.title}</Typography>
+            {item.title}
+          </Typography>
         </Link>
       </MenuItem>
 
@@ -87,7 +87,15 @@ const SidebarItems = () => {
   const pathDirect = location.pathname;
 
   return (
-    <Box sx={{ px: "20px", overflowX: 'hidden' }}>
+    <Box sx={{
+      px: "20px",
+      overflowX: 'hidden',
+      '& .MuiChip-root': {
+        color: '#1b84ff !important',
+        backgroundColor: '#1b84ff1a !important',
+        fontSize: '13px'
+      }
+    }}>
       <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#43ced7"} themeSecondaryColor={'#1b84ff1a'}>
         {renderMenuItems(Menuitems, pathDirect)}
       </MUI_Sidebar>

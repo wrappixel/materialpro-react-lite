@@ -25,41 +25,67 @@ const Login2 = () => {
         },
       }}
     >
-      <Grid container spacing={0} justifyContent="center" sx={{ height: '100vh' }}>
+      <Grid
+        container
+        spacing={0}
+        sx={{
+          justifyContent: "center",
+          height: '100vh'
+        }}>
         <Grid
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
           size={{
             xs: 12,
             sm: 12,
             lg: 4,
             xl: 3
+          }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
           }}>
           <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
-            <Box display="flex" alignItems="center" justifyContent="center">
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}>
               <AuthLogo />
             </Box>
             <AuthLogin
               subtext={
-                <Typography variant="subtitle1" textAlign="center" color="textSecondary" mb={1}>
+                <Typography
+                  variant="subtitle1"
+                  color="textSecondary"
+                  sx={{
+                    textAlign: "center",
+                    mb: 1
+                  }}>
                   Your Social Campaigns
                 </Typography>
               }
               subtitle={
-                <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
-                  <Typography color="textSecondary" variant="h6" fontWeight="500">
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  sx={{
+                    justifyContent: "center",
+                    mt: 3
+                  }}>
+                  <Typography color="textSecondary" variant="h6" sx={{
+                    fontWeight: "500"
+                  }}>
                     New to MaterialPro?
                   </Typography>
                   <Typography
                     component={Link}
                     to="/auth/register"
-                    fontWeight="500"
                     sx={{
+                      fontWeight: "500",
                       textDecoration: 'none',
-                      color: 'primary.main',
-                    }}
-                  >
+                      color: 'primary.main'
+                    }}>
                     Create an account
                   </Typography>
                 </Stack>

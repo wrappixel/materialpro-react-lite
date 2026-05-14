@@ -58,7 +58,9 @@ const Profile = () => {
           },
         }}
       >
-        <Box paddingX={2}>
+        <Box sx={{
+          paddingX: 2
+        }}>
           {dropdownData.profile.map((profile) => (
             <Box key={profile.title}>
               <Box
@@ -75,14 +77,14 @@ const Profile = () => {
                 <Link to={profile.href}>
                   <Typography
                     variant="subtitle2"
-                    fontWeight={500}
                     color="textPrimary"
-                    className="text-hover" component='span'
+                    className="text-hover"
+                    component='span'
                     noWrap
                     sx={{
-                      width: '240px',
-                    }}
-                  >
+                      fontWeight: 500,
+                      width: '240px'
+                    }}>
                     {profile.title}
                   </Typography>
                 </Link>
@@ -90,7 +92,9 @@ const Profile = () => {
             </Box>
           ))}
         </Box>
-        <Box p={0}>
+        <Box sx={{
+          p: 0
+        }}>
           <Box
             sx={{
               px: 2,

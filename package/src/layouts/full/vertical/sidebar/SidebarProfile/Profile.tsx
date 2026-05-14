@@ -69,13 +69,14 @@ export const Profile = () => {
     >
       <>
         <Box
-          py="28px"
-          borderRadius="0 !important"
           sx={{
-            px: '30px',
-          }}
-        >
-          <Box className="profile-img" position="relative">
+            py: "28px",
+            borderRadius: "0 !important",
+            px: '30px'
+          }}>
+          <Box className="profile-img" sx={{
+            position: "relative"
+          }}>
             <Avatar alt="Remy Sharp" src={ProfileImg} sx={{ height: 50, width: 50 }} />
           </Box>
         </Box>
@@ -88,34 +89,35 @@ export const Profile = () => {
           sx={{ p: 0, width: '100%' }}
         >
           { <Box
-
-            display="flex"
-            alignItems="center"
-            justifyContent="space-between"
             sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
               py: '4px',
               px: 2,
               bgcolor: 'rgba(0,0,0,0.5)',
               borderRadius: '0 !important',
-              width: '100%',
-            }}
-          >
+              width: '100%'
+            }}>
             <Typography
               variant="h6"
-              fontSize="15px"
-              color="white"
-              fontWeight="400"
               sx={{
+                color: "white !important",
+                fontSize: "15px",
+                fontWeight: "400",
                 textOverflow: 'ellipsis',
                 whiteSpace: 'nowrap',
-                overflow: 'hidden',
-              }}
-            >
+                overflow: 'hidden'
+              }}>
               Markarn Doe
             </Typography>
             <Box>
               <Tooltip title="User" placement="top">
-                <Box color="white" sx={{ p: 0 }}>
+                <Box
+                  sx={{
+                    color: "white",
+                    p: 0
+                  }}>
                   <IconCaretDownFilled width={18} />
                 </Box>
               </Tooltip>
@@ -126,59 +128,109 @@ export const Profile = () => {
 
         <StyledMenu
           id="demo-customized-menu"
-          MenuListProps={{
-            'aria-labelledby': 'demo-customized-button',
+          slotProps={{
+            list: {
+              'aria-labelledby': 'demo-customized-button',
+            }
           }}
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
         >
           <MenuItem onClick={handleClose} disableRipple>
-            <Box color="primary.main" display="flex" alignItems="center">
+            <Box
+              sx={{
+                color: "primary.main",
+                display: "flex",
+                alignItems: "center"
+              }}>
               <Icon icon="solar:user-circle-line-duotone" height={22} />
             </Box>
-            <Typography fontSize="15px" ml={1}>
+            <Typography
+              sx={{
+                fontSize: "15px",
+                ml: 1
+              }}>
               My Profile
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} disableRipple>
-            <Box color="secondary.main" display="flex" alignItems="center">
+            <Box
+              sx={{
+                color: "secondary.main",
+                display: "flex",
+                alignItems: "center"
+              }}>
               <Icon icon="solar:notes-line-duotone" height={21} />
             </Box>
-            <Typography fontSize="15px" ml={1}>
+            <Typography
+              sx={{
+                fontSize: "15px",
+                ml: 1
+              }}>
               My Notes
             </Typography>
           </MenuItem>
           <MenuItem onClick={handleClose} disableRipple>
-            <Box color="success.main" display="flex" alignItems="center">
+            <Box
+              sx={{
+                color: "success.main",
+                display: "flex",
+                alignItems: "center"
+              }}>
               <Icon icon="solar:inbox-line-line-duotone" height={21} />
             </Box>
-            <Typography fontSize="15px" ml={1}>
+            <Typography
+              sx={{
+                fontSize: "15px",
+                ml: 1
+              }}>
               Inbox
             </Typography>
           </MenuItem>
           <Divider />
           <MenuItem onClick={handleClose} disableRipple>
-            <Box color="warning.main" display="flex" alignItems="center">
+            <Box
+              sx={{
+                color: "warning.main",
+                display: "flex",
+                alignItems: "center"
+              }}>
               <Icon icon="solar:settings-line-duotone" height={21} />
             </Box>
-            <Typography fontSize="15px" ml={1}>
+            <Typography
+              sx={{
+                fontSize: "15px",
+                ml: 1
+              }}>
               Account Setting
             </Typography>
           </MenuItem>
           <Divider />
           <MenuItem onClick={handleClose} disableRipple>
-            <Box color="error.main" display="flex" alignItems="center">
+            <Box
+              sx={{
+                color: "error.main",
+                display: "flex",
+                alignItems: "center"
+              }}>
               <Icon icon="solar:logout-2-line-duotone" height={21} />
             </Box>
             <Link to="/auth/auth1/login">
-              <Typography fontSize="15px" ml={1} color="textPrimary">
+              <Typography
+                color="textPrimary"
+                sx={{
+                  fontSize: "15px",
+                  ml: 1
+                }}>
                 Logout
               </Typography>
             </Link>
           </MenuItem>
           <Divider />
-          <Box px="12px">
+          <Box sx={{
+            px: "12px"
+          }}>
             <Button variant="contained" color="primary" fullWidth>
               View Profile
             </Button>

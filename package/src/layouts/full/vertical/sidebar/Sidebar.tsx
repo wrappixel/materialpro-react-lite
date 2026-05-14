@@ -54,11 +54,10 @@ const Sidebar = () => {
             {/* Sidebar Box */}
             {/* ------------------------------------------- */}
             <Box
-              borderRadius="0 !important"
               sx={{
-                height: "100%",
-              }}
-            >
+                borderRadius: "0 !important",
+                height: "100%"
+              }}>
               <Profile />
                
               <Scrollbar sx={{ height: "calc(100% - 270px)" }}>
@@ -91,7 +90,9 @@ const Sidebar = () => {
           {/* ------------------------------------------- */}
           {/* Logo */}
           {/* ------------------------------------------- */}
-          <Box px={2}>
+          <Box sx={{
+            px: 2
+          }}>
             <AuthLogo />
           </Box>
           <Profile />

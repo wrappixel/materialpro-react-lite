@@ -22,7 +22,6 @@ const FullLayout: FC = () => {
 
   return (
     <>
-
       {/* ------------------------------------------- */}
       {/* Topbar */}
       {/* ------------------------------------------- */}
@@ -62,7 +61,11 @@ const FullLayout: FC = () => {
             {/* PageContent */}
             {/* ------------------------------------------- */}
 
-            <Box mt={4} sx={{ minHeight: 'calc(100vh - 260px)' }}>
+            <Box
+              sx={{
+                mt: 4,
+                minHeight: 'calc(100vh - 260px)'
+              }}>
 
               <Outlet />
             </Box>

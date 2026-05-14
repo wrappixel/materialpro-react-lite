@@ -55,7 +55,6 @@ const products = [
 const BasicTable = () => {
   return (
     <BaseCard title="Basic Table">
-
       <TableContainer
         sx={{
           width: {
@@ -103,24 +102,40 @@ const BasicTable = () => {
             {products.map((product) => (
               <TableRow key={product.name}>
                 <TableCell>
-                  <Typography fontSize="15px" fontWeight={500}>
+                  <Typography
+                    sx={{
+                      fontSize: "15px",
+                      fontWeight: 500
+                    }}>
                     {product.id}
                   </Typography>
                 </TableCell>
                 <TableCell>
-                  <Box display="flex" alignItems="center">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center"
+                    }}>
                     <Box>
-                      <Typography fontSize="14px" fontWeight={600}>
+                      <Typography
+                        sx={{
+                          fontSize: "14px",
+                          fontWeight: 600
+                        }}>
                         {product.name}
                       </Typography>
-                      <Typography color="textSecondary" fontSize="13px">
+                      <Typography color="textSecondary" sx={{
+                        fontSize: "13px"
+                      }}>
                         {product.post}
                       </Typography>
                     </Box>
                   </Box>
                 </TableCell>
                 <TableCell>
-                  <Typography color="textSecondary" fontSize="14px">
+                  <Typography color="textSecondary" sx={{
+                    fontSize: "14px"
+                  }}>
                     {product.pname}
                   </Typography>
                 </TableCell>
@@ -137,16 +152,16 @@ const BasicTable = () => {
                   ></Chip>
                 </TableCell>
                 <TableCell align="right">
-                  <Typography fontSize="14px">${product.budget}k</Typography>
+                  <Typography sx={{
+                    fontSize: "14px"
+                  }}>${product.budget}k</Typography>
                 </TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
-
     </BaseCard>
-
   );
 };
 

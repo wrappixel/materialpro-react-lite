@@ -66,7 +66,12 @@ const MyContacts = () => {
                   }
                 }}
                 secondaryAction={
-                  <Box display="flex" alignItems="center" gap={1}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 1
+                    }}>
                     <IconButton edge="end" size="small" aria-label="delete" color="error">
                       <Icon icon="solar:videocamera-linear" height={18} />
                     </IconButton>
@@ -107,13 +112,17 @@ const MyContacts = () => {
                     secondary={contact.subtext}
                     slotProps={{
                       primary: {
-                        fontSize: "16px",
-                        fontWeight: 500,
-                        mb: "4px",
+                        sx: {
+                          fontSize: "16px",
+                          fontWeight: 500,
+                          mb: "4px",
+                        }
                       },
 
                       secondary: {
-                        fontSize: "14px",
+                        sx: {
+                          fontSize: "14px",
+                        }
                       }
                     }} />
                 </ListItemButton>

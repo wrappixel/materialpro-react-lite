@@ -35,23 +35,31 @@ const ExCheckbox = () => {
               <Checkbox
                 checked={checked}
                 onChange={handleChange}
-                inputProps={{ 'aria-label': 'primary checkbox' }}
+                slotProps={{
+                  input: { 'aria-label': 'primary checkbox' }
+                }}
               />
 
               <Checkbox
                 disabled
                 checked
-                inputProps={{ 'aria-label': 'disabled checked checkbox' }}
+                slotProps={{
+                  input: { 'aria-label': 'disabled checked checkbox' }
+                }}
               />
               <Checkbox
                 defaultChecked
                 indeterminate
-                inputProps={{ 'aria-label': 'indeterminate checkbox' }}
+                slotProps={{
+                  input: { 'aria-label': 'indeterminate checkbox' }
+                }}
               />
               <Checkbox
                 defaultChecked
                 color="default"
-                inputProps={{ 'aria-label': 'checkbox with default color' }}
+                slotProps={{
+                  input: { 'aria-label': 'checkbox with default color' }
+                }}
               />
             </Box>
           </BaseCard>
@@ -73,12 +81,16 @@ const ExCheckbox = () => {
               <Checkbox
                 defaultChecked
                 color="primary"
-                inputProps={{ 'aria-label': 'checkbox with default color' }}
+                slotProps={{
+                  input: { 'aria-label': 'checkbox with default color' }
+                }}
               />
               <Checkbox
                 defaultChecked
                 color="secondary"
-                inputProps={{ 'aria-label': 'checkbox with default color' }}
+                slotProps={{
+                  input: { 'aria-label': 'checkbox with default color' }
+                }}
               />
               <Checkbox
                 defaultChecked

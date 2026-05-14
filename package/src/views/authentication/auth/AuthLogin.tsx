@@ -14,7 +14,12 @@ import CustomTextField from 'src/components/forms/theme-elements/CustomTextField
 const AuthLogin = ({ title, subtitle, subtext }:{title?:string , subtitle:any , subtext:any}) => (
     <>
         {title ? (
-            <Typography fontWeight="700" variant="h2" mb={1}>
+            <Typography
+                variant="h2"
+                sx={{
+                    fontWeight: "700",
+                    mb: 1
+                }}>
                 {title}
             </Typography>
         ) : null}
@@ -23,16 +28,36 @@ const AuthLogin = ({ title, subtitle, subtext }:{title?:string , subtitle:any , 
 
         <Stack>
             <Box>
-                <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='username' mb="5px">Username</Typography>
+                <Typography
+                    variant="subtitle1"
+                    component="label"
+                    htmlFor='username'
+                    sx={{
+                        fontWeight: 500,
+                        mb: "5px"
+                    }}>Username</Typography>
                 <CustomTextField id="username" variant="outlined" fullWidth />
             </Box>
-            <Box mt="25px">
-                <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='password' mb="5px" >Password</Typography>
+            <Box sx={{
+                mt: "25px"
+            }}>
+                <Typography
+                    variant="subtitle1"
+                    component="label"
+                    htmlFor='password'
+                    sx={{
+                        fontWeight: 500,
+                        mb: "5px"
+                    }}>Password</Typography>
                 <CustomTextField id="password" type="password" variant="outlined" fullWidth />
             </Box>
-            <Stack justifyContent="space-between" direction="row" alignItems="center" my={2}>
+            <Stack
+                direction="row"
+                sx={{
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    my: 2
+                }}>
                 <FormGroup>
                     <FormControlLabel
                         control={<Checkbox defaultChecked />}
@@ -42,12 +67,11 @@ const AuthLogin = ({ title, subtitle, subtext }:{title?:string , subtitle:any , 
                 <Typography
                     component={Link}
                     to="/"
-                    fontWeight="500"
                     sx={{
+                        fontWeight: "500",
                         textDecoration: 'none',
-                        color: 'primary.main',
-                    }}
-                >
+                        color: 'primary.main'
+                    }}>
                     Forgot Password ?
                 </Typography>
             </Stack>

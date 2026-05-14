@@ -8,7 +8,12 @@ import { Stack } from '@mui/system';
 const AuthRegister = ({ title, subtitle, subtext }:{title?:string , subtitle: any , subtext:any}) => (
     <>
         {title ? (
-            <Typography fontWeight="700" variant="h2" mb={1}>
+            <Typography
+                variant="h2"
+                sx={{
+                    fontWeight: "700",
+                    mb: 1
+                }}>
                 {title}
             </Typography>
         ) : null}
@@ -16,17 +21,39 @@ const AuthRegister = ({ title, subtitle, subtext }:{title?:string , subtitle: an
         {subtext}
 
         <Box>
-            <Stack mb={3}>
-                <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='name' mb="5px">Name</Typography>
+            <Stack sx={{
+                mb: 3
+            }}>
+                <Typography
+                    variant="subtitle1"
+                    component="label"
+                    htmlFor='name'
+                    sx={{
+                        fontWeight: 500,
+                        mb: "5px"
+                    }}>Name</Typography>
                 <CustomTextField id="name" variant="outlined" fullWidth />
 
-                <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='email' mb="5px" mt="25px">Email Address</Typography>
+                <Typography
+                    variant="subtitle1"
+                    component="label"
+                    htmlFor='email'
+                    sx={{
+                        fontWeight: 500,
+                        mb: "5px",
+                        mt: "25px"
+                    }}>Email Address</Typography>
                 <CustomTextField id="email" variant="outlined" fullWidth />
 
-                <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='password' mb="5px" mt="25px">Password</Typography>
+                <Typography
+                    variant="subtitle1"
+                    component="label"
+                    htmlFor='password'
+                    sx={{
+                        fontWeight: 500,
+                        mb: "5px",
+                        mt: "25px"
+                    }}>Password</Typography>
                 <CustomTextField id="password" variant="outlined" fullWidth />
             </Stack>
             <Button color="primary" variant="contained" size="large" fullWidth component={Link} to="/auth/login">

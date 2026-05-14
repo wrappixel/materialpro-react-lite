@@ -58,10 +58,11 @@ const CustomCheckbox = React.forwardRef<HTMLButtonElement, CheckboxProps>((props
       />
     }
     icon={<BpIcon />}
-    inputProps={{ 'aria-label': 'Checkbox demo' }}
     ref={ref}
     {...props}
-  />
+    slotProps={{
+      input: { 'aria-label': 'Checkbox demo' }
+    }} />
 ));
 
 // Set displayName to help with debugging

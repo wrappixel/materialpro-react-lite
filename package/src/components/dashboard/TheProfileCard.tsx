@@ -23,15 +23,28 @@ const ProfileCard = () => {
         title="green iguana"
       />
       <CardContent>
-        <Box textAlign="center" mt="-80px" mb={3}>
+        <Box
+          sx={{
+            textAlign: "center",
+            mt: "-80px",
+            mb: 3
+          }}>
           <Avatar
             src={user1}
             sx={{ width: 100, height: 100, m: "0 auto" }}
           />
-          <Typography variant="h5" fontSize='24px' mt={4} mb={1}>
+          <Typography
+            variant="h5"
+            sx={{
+              fontSize: '24px',
+              mt: 4,
+              mb: 1
+            }}>
             Angela Dominic
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary" mb={2}>
+          <Typography variant="subtitle1" color="textSecondary" sx={{
+            mb: 2
+          }}>
             Web Designer & Developer
           </Typography>
           <Button variant="contained" color="primary">
@@ -42,24 +55,37 @@ const ProfileCard = () => {
         <Stack
           direction="row"
           spacing={1}
-          mt={4}
-          justifyContent="space-between"
-        >
-          <Box textAlign="center">
+          sx={{
+            mt: 4,
+            justifyContent: "space-between"
+          }}>
+          <Box sx={{
+            textAlign: "center"
+          }}>
             <Typography variant="h3">1,099</Typography>
-            <Typography variant="subtitle2" color='textSecondary' fontSize="12px">
+            <Typography variant="subtitle2" color='textSecondary' sx={{
+              fontSize: "12px"
+            }}>
               Articles
             </Typography>
           </Box>
-          <Box textAlign="center">
+          <Box sx={{
+            textAlign: "center"
+          }}>
             <Typography variant="h3">23,469</Typography>
-            <Typography variant="subtitle2" color='textSecondary' fontSize="12px">
+            <Typography variant="subtitle2" color='textSecondary' sx={{
+              fontSize: "12px"
+            }}>
               Followers
             </Typography>
           </Box>
-          <Box textAlign="center">
+          <Box sx={{
+            textAlign: "center"
+          }}>
             <Typography variant="h3">6,035</Typography>
-            <Typography variant="subtitle2" color='textSecondary' fontSize="12px">
+            <Typography variant="subtitle2" color='textSecondary' sx={{
+              fontSize: "12px"
+            }}>
               Following
             </Typography>
           </Box>

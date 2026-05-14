@@ -145,11 +145,15 @@ const Header = () => {
             </MenuItem>
           </Menu>
 
-          <Box flexGrow={1} />
+          <Box sx={{
+            flexGrow: 1
+          }} />
 
           {lgUp ? (
             <>
-              <Stack spacing={2} direction="row" alignItems="center">
+              <Stack spacing={2} direction="row" sx={{
+                alignItems: "center"
+              }}>
                 <Button
                   variant="contained"
                   color="success"
@@ -164,7 +168,9 @@ const Header = () => {
           ) : null}
           {lgUp ? null : (
             <>
-              <Stack spacing={2} direction="row" alignItems="center">
+              <Stack spacing={2} direction="row" sx={{
+                alignItems: "center"
+              }}>
                 <Button
                   variant="contained"
                   color="success"

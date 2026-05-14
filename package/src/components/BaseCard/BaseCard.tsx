@@ -24,9 +24,16 @@ const BaseCard = (props: Props) => {
         boxShadow: shadows[9]
       }}
     >
-      <Box p={2} display="flex" alignItems="center">
+      <Box
+        sx={{
+          p: 2,
+          display: "flex",
+          alignItems: "center"
+        }}>
         <Box>
-          <Typography variant="h5" fontWeight='500'>{props.title}</Typography>
+          <Typography variant="h5" sx={{
+            fontWeight: '500'
+          }}>{props.title}</Typography>
         </Box>
         {props.chiptitle ? (
           <Chip
