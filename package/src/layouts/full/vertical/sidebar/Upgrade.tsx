@@ -20,7 +20,7 @@ export const Upgrade = () => {
                         mb: 1
                     }}>Check Pro
                     Version</Typography>
-                    <Button color="primary" target="_blank" href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376#demos" variant="contained" aria-label="logout" size="small">
+                    <Button color="primary" target="_blank" href="https://wrappixel.com/templates/materialpro-react-redux-admin/?ref=376#demos" variant="contained" aria-label="logout" size="small">
                         Check
                     </Button>
                 </Box>

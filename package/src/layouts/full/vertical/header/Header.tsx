@@ -158,7 +158,7 @@ const Header = () => {
                   variant="contained"
                   color="success"
                   target="_blank"
-                  href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376#demos"
+                  href="https://wrappixel.com/templates/materialpro-react-admin/?ref=376#demos"
                 >
                   Check Pro Template
                 </Button>
@@ -175,7 +175,7 @@ const Header = () => {
                   variant="contained"
                   color="success"
                   target="_blank"
-                  href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376"
+                  href="https://wrappixel.com/templates/materialpro-react-admin/?ref=376"
                 >
                   Check Pro Template
                 </Button>
