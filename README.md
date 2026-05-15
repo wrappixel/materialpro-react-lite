@@ -10,7 +10,7 @@
 </h1>
 <p align="center">Download most useful and comprehensive 🚀 Free React admin template built for developers 🛠</p>
 
-[![MaterialPro React Admin Free Demo Screenshot](https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-lite-y.jpg)](https://www.wrappixel.com/templates/materialpro-react-admin-lite/?ref=376)
+[![MaterialPro React Admin Free Demo Screenshot](https://images.wrappixel.com/templates/free/materialpro/materialpro-react-lite-preview.webp)](https://www.wrappixel.com/templates/materialpro-react-admin-lite/?ref=376)
 
 
 
@@ -103,12 +103,12 @@ The Pro Version of the **MaterialPro React Admin Template** comes packed with es
   <a href="https://materialpro-react-main.netlify.app/?ref=376" target="_blank">
     <img src="https://img.shields.io/badge/Try_the_Demo-Click_Here-blue" alt="Try the Demo">
   </a>
-  <a href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376" target="_blank">
+  <a href="https://wrappixel.com/templates/materialpro-react-admin/?ref=376" target="_blank">
     <img src="https://img.shields.io/badge/Download_Now-Click_Here-green" alt="Download Now">
   </a>
 </div>
 
-[![MaterialPro React Admin Demo Screenshot](https://www.wrappixel.com/wp-content/uploads/edd/2025/01/MaterialPro-React.js.jpg)](https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376)
+[![MaterialPro React Admin Demo Screenshot](https://images.wrappixel.com/templates/pro/materialpro/MaterialPro-Reactjs.webp)](https://wrappixel.com/templates/materialpro-react-admin/?ref=376)
 
 ---
 
@@ -159,18 +159,18 @@ The **Free Version** of the **MaterialPro React Admin Template** provides a soli
    <tbody>
       <tr>
          <td>
-            <a href="https://www.wrappixel.com/all-access-pass/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/2025/04/all-access-pass-category-banner-1.png" alt="all-access-pass-category" style="max-width:140px;">
+            <a href="https://wrappixel.com/all-access-pass/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/all-access/all-access-pass.webp" alt="all-access-pass-category" style="max-width:140px;">
             </a>
          </td>
          <td>
-            <a href="https://www.wrappixel.com/templates/materialpro/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-bootstrap-admin-wpn.jpg" alt="materialpro-bootstrap-admin-template" style="max-width:140px;">
+            <a href="https://wrappixel.com/templates/materialpro/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/materialpro/materialpro-bootstrap-admin-wpn.webp" alt="materialpro-bootstrap-admin-template" style="max-width:140px;">
             </a>
          </td>
          <td>
-            <a href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2025/02/MaterialPro-Nextjs_without.jpg" alt="materialpro-next-admin-template" style="max-width:140px;">
+            <a href="https://wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/materialpro/MaterialPro-Nextjs.webp" alt="materialpro-next-admin-template" style="max-width:140px;">
             </a>
          </td> 
       </tr>
@@ -194,18 +194,18 @@ The **Free Version** of the **MaterialPro React Admin Template** provides a soli
    <tbody>
       <tr>
          <td>
-            <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-angular-admin-wpn.jpg" style="max-width:140px;">
+            <a href="https://wrappixel.com/templates/materialpro-angular-dashboard/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/materialpro/materialpro-angular-admin-wpn.webp" style="max-width:140px;">
             </a>
          </td>
          <td>
-            <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-vuetify-admin-wpn.jpg" alt="materialpro-vue-admin-template" style="max-width:150px;">
+            <a href="https://wrappixel.com/templates/materialpro-vuetify-admin/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/materialpro/materialpro-vuetify-vue.webp" alt="materialpro-vue-admin-template" style="max-width:150px;">
             </a>
          </td>  
          <td>
-            <a href="https://www.wrappixel.com/templates/materialpro-nuxtjs/?ref=376" width="150px">
-               <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-nuxtjs-admin-wpn.jpg" alt="materialpro-nuxt-admin-template" style="max-width:150px;">
+            <a href="https://wrappixel.com/templates/materialpro-nuxtjs/?ref=376" width="150px">
+               <img src="https://images.wrappixel.com/templates/pro/materialpro/materialpro-nuxtjs-admin.webp" alt="materialpro-nuxt-admin-template" style="max-width:150px;">
             </a>
          </td>
       </tr>
