@@ -1,16 +1,16 @@
 <p align="center">
-   <a href="https://www.wrappixel.com/" target="_blank">
+   <a href="https://wrappixel.com/" target="_blank">
       <img src="https://adminmart.github.io/template_api/images/brand-logo/WrapPixel-Logo.svg" alt="materialpro-image" width="100px" height="100px">
    </a>
 </p>
 <h1 align="center">
-   <a href="https://www.wrappixel.com/templates/materialpro-react-admin-lite/?ref=376" target="_blank" align="center">
+   <a href="https://wrappixel.com/templates/materialpro-react-admin-lite/?ref=376" target="_blank" align="center">
        MaterialPro React Admin Free
    </a>
 </h1>
 <p align="center">Download most useful and comprehensive 🚀 Free React admin template built for developers 🛠</p>
 
-[![MaterialPro React Admin Free Demo Screenshot](https://images.wrappixel.com/templates/free/materialpro/materialpro-react-lite-preview.webp)](https://www.wrappixel.com/templates/materialpro-react-admin-lite/?ref=376)
+[![MaterialPro React Admin Free Demo Screenshot](https://images.wrappixel.com/templates/free/materialpro/materialpro-react-lite-preview.webp)](https://wrappixel.com/templates/materialpro-react-admin-lite/?ref=376)
 
 
 
@@ -122,7 +122,7 @@ The **Free Version** of the **MaterialPro React Admin Template** provides a soli
 | **Feature**                      | **Free Version**                       | **Pro Version**                                      |
 |-----------------------------------|----------------------------------------|-----------------------------------------------------|
 | **Demo**                          | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://materialpro-react-free.netlify.app/?ref=376)                               | [![Try the Demo](https://img.shields.io/badge/Try_the_Demo-Click_Here-blue)](https://materialpro-react-main.netlify.app/?ref=376)                                              |
-| **Download**                      | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://www.wrappixel.com/templates/materialpro-react-admin-lite/?ref=376)                                | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://www.wrappixel.com/templates/materialpro-react-admin/?ref=376)                                          |
+| **Download**                      | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://wrappixel.com/templates/materialpro-react-admin-lite/?ref=376)                                | [![Download Now](https://img.shields.io/badge/Download_Now-Click_Here-green)](https://wrappixel.com/templates/materialpro-react-admin/?ref=376)                                          |
 | **Responsive Design**             | ✅ Yes                                 | ✅ Yes                                              |
 | **Pre-designed Pages**            | ✅ Basic Pages                         | ✅ Advanced Pages (more layouts & options)           |
 | **Widgets**                       | ✅ Basic Widgets                       | ✅ Advanced Widgets (e.g., weather, charts, maps)    |
@@ -246,16 +246,16 @@ Follow these simple steps to start contributing:
 ---
 
 ## 🧭 Useful Links
-- <p><a href="https://www.wrappixel.com/templates/category/admin-dashboard-templates/?ref=376">Admin Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/bootstrap-templates/?ref=376">Bootstrap Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/angular-templates/?ref=376">Angular Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/react-templates/?ref=376">React Template</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/framer-templates/?ref=376">Framer Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/mui-templates/?ref=376">Material UI Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/vuetify-templates/?ref=376">Vuetify Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/nextjs-templates/?ref=376">NextJs Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/nuxt-templates/?ref=376">Nuxt Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/category/tailwind-dashboard/?ref=376">Tailwind Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/admin-dashboard-templates/?ref=376">Admin Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/bootstrap-templates/?ref=376">Bootstrap Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/angular-templates/?ref=376">Angular Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/react-templates/?ref=376">React Template</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/framer-templates/?ref=376">Framer Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/mui-templates/?ref=376">Material UI Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/vuetify-templates/?ref=376">Vuetify Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/nextjs-templates/?ref=376">NextJs Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/nuxt-templates/?ref=376">Nuxt Templates</a> from Wrappixel</p>
+- <p><a href="https://wrappixel.com/templates/category/tailwind-dashboard/?ref=376">Tailwind Templates</a> from Wrappixel</p>
 
 ---
 
